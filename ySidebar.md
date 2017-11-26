@@ -20,7 +20,7 @@ Projects:
     * [Kloster Project Repo](https://github.com/eyedeekay/kloster/)
   * [LEDE Busybox+Linux install media generation](https://eyedeekay.github.io/lede-docker/)
     * [LEDE Build Configuration Project Repo](https://github.com/eyedeekay/lede-docker)
-  * [/Page Not Ready: Live Media generation for Allwinner tablets](https://eyedeekay.github.io/imgmaker/)
+  * [Live Media generation for Allwinner tablets](https://eyedeekay.github.io/imgmaker/)
     * [imgmaker Project Repo](https://github.com/eyedeekay/imgmaker)
 
 ### Game Development Projects
