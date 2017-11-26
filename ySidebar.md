@@ -7,7 +7,7 @@ Projects:
 
   * [apt-now, a layer of convenience around reprepro for hosting custom packages](https://eyedeekay.github.io/apt-now/)
     * [apt-now Project Repo](https://github.com/eyedeekay/apt-now/)
-  * [/Page Not Ready: apt-cacher-ng in a docker container with experimental, https-only p2p repos preconfigured for caching](https://eyedeekay.github.io/hoarderCache-docker/)
+  * [apt-cacher-ng in a docker container with experimental, https-only p2p repos preconfigured for caching](https://eyedeekay.github.io/hoarderCache-docker/)
     * [HoarderCache-Docker Project Repo](https://github.com/eyedeekay/hoardercache-docker/)
   * [/Not posted yet: Sharing apt-cacher-ng contents across identically controlled instances with Syncthing](https://eyedeekay.github.io/)
     * [HoarderCache-Docker Example](https://github.com/eyedeekay/hoardercache-docker/)
