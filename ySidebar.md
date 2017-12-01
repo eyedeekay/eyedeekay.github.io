@@ -26,7 +26,7 @@ Projects:
 ### Game Development Projects
 
   * [LAIR](https://eyedeekay.github.io/lair-web)
-    * [Project Repo]((https://github.com/eyedeekay/valair)
+    * [Project Repo](https://github.com/eyedeekay/valair)
 
 ### Security Projects
 
