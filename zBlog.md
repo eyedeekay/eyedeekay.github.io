@@ -11,3 +11,9 @@ sometimes do wierd, ill-advised things to get my computers just the way I like
 them.
 
 Also I'm pretty bad at blogging.
+
+#### Mon Jan 22 12:41:21 EST 2018
+
+Getting nervous, about to flash an up-to-date coreboot port to my netbook via
+a ch341a flasher. I'm about 99% sure I'm not going to hurt anything, but who
+knows?
