@@ -1,35 +1,59 @@
 Projects:
 ---------
 
-### Home Network/Install Media Projects
+Besides working on [I2P](https://geti2p.net/), I have a bunch of side-projects
+centered around the use of I2P, especially in Go and Javascript. Some of these
+are also I2P labs projects.
 
-#### Self Hosting Projects
+### I2P Webextensions and Browser Research
 
-  * [apt-now, a layer of convenience around reprepro for hosting custom packages](https://eyedeekay.github.io/apt-now/)
-    * [apt-now Project Repo](https://github.com/eyedeekay/apt-now/)
-  * [apt-cacher-ng in a docker container with experimental, https-only p2p repos preconfigured for caching](https://eyedeekay.github.io/hoarderCache-docker/)
-    * [HoarderCache-Docker Project Repo](https://github.com/eyedeekay/hoardercache-docker/)
-  * [/Not posted yet: Sharing apt-cacher-ng contents across identically controlled instances with Syncthing](https://eyedeekay.github.io/)
-    * [HoarderCache-Docker Example](https://github.com/eyedeekay/hoardercache-syncthing/)
-  * [/Not posted yet: Managing Monero functions with Docker Containers:](https://eyedeekay.github.io/monero-full-node/)
-    * [Monero Management with Docker](https://github.com/eyedeekay/monero-full-node)
+ * [I2P in Private Browsing Mode for Firefox](https://eyedeekay.github.io/I2P-in-Private-Browsing-Mode-Firefox/)
+ inspired by Brave, this browser extension enforces a few privacy rules for
+ Firefox, then implements a set of "Container Tabs" which can be used to browse
+ I2P in a way which is automatic and safe.
+ * [I2P Configuration Helper for Chromium](https://eyedeekay.github.io/I2P-Configuration-For-Chromium/)
+ A fork of the Firefox plugin before it used container tabs, after the user sets
+ up an I2P browsing profile this plugin can automatically set up the profile to
+ use I2P with the maximum privacy available from Chromium.
+ * [I2P Browser Fingerprint Gallery](https://eyedeekay.github.io/I2P-Browser-Attackability-Evaluation/)
+ This is an ongoing evaluation of the various ways there are to configure
+ browsers for I2P and a developing rating system for them.
 
-#### Install Media Projects
+### Go(golang) I2P Tools
 
-  * [apt-based GNU+Linux distro install media generation](https://eyedeekay.github.io/hoarderMediaOS/)
-    * [HoaderMediaOS Project Repo](https://github.com/eyedeekay/hoarderMediaOS/)
-  * [Alpine Busybox+Linux+Xen+PVM distro install media generation](https://eyedeekay.github.io/kloster/)
-    * [Kloster Project Repo](https://github.com/eyedeekay/kloster/)
-  * [LEDE Busybox+Linux install media generation](https://eyedeekay.github.io/lede-docker/)
-    * [LEDE Build Configuration Project Repo](https://github.com/eyedeekay/lede-docker)
-  * [Live Media generation for Allwinner tablets](https://eyedeekay.github.io/imgmaker/)
-    * [imgmaker Project Repo](https://github.com/eyedeekay/imgmaker)
+ * [samcatd](https://github.com/eyedeekay/sam-forwarder), a.k.a. sam-forwarder
+ many of the other applications use sam-forwarder as a way of automatically
+ configuring i2ptunnels, including:
+  - [httptunnel](https://github.com/eyedeekay/httptunnel) is a standalone http
+  proxy for I2P that uses SAM and implements an interface like sam-forwarder.
+  - [eephttpd](https://github.com/eyedeekay/eephttpd) is a simple static http
+  server with markdown parsing support.
+  - [gitsam](https://github.com/eyedeekay/gitsam) is a super-simple git
+  repository setup built on eephttpd and [gitkit]().
+  - [reposam](https://github.com/eyedeekay/reposam) is a binary deb repository
+  built on [repogen]().
+  - [samtracker](https://github.com/eyedeekay/samtracker) is a simple torrent
+  tracker built upon [retracker]().
+  - [cowyosam](https://github.com/eyedeekay/cowyosam) is a pastebin-wiki hybrid
+  built on [cowyo]()
+  - [colluding_sites_attack](https://github.com/eyedeekay/colluding_sites_attack)
+  is a tool for fingerprinting browsers as they visit eepSites to determine if
+  useful information can be extracted.
+  - [outproxy](https://github.com/eyedeekay/outproxy) is a standalone outproxy
+  built on SAM. Definitely don't use it if you don't know what you're in for.
+  - [libanonvpn](https://github.com/RTradeLtd/libanonvpn) is a VPN library and
+  terminal application that uses SAM Datagrams. Sort of like onioncat, but
+  cooler.
+ * [checki2cp](https://github.com/eyedeekay/checki2cp) is an I2P router presence
+ detection tool. Use it to find out if an I2P router is installed.
+ * [goSam](https://github.com/eyedeekay/goSam) is a SAM library for Go that
+ implements an HTTP Transport.
+ * [i2pdig](https://github.com/eyedeekay/i2pdig) is dig, but for I2P. It's been
+ a while, I'll update it soon.
+ * [iget](https://github.com/eyedeekay/iget) iget is an eepget clone, with some
+ extra features and room to grow.
+ * [keyto](https://github.com/eyedeekay/keyto) is a text key conversion tool.
+ * [sam3](https://github.com/eyedeekay/sam3) is another SAM library for Go, but
+ it implements a net.Conn and net.Packetconn making it a near drop-in
+ replacement for regular connections.
 
-### Game Development Projects
-
-  * [LAIR](https://eyedeekay.github.io/lair-web)
-    * [Project Repo](https://github.com/eyedeekay/valair)
-
-### Security Projects
-
-*Coming soonish*

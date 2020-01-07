@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>
-    Blog of a Home Network Control Freak
-    </title>
-    <link rel="stylesheet" href="./style.css">
+  <title>I2P Browser Configurations and their Attackability</title>
+  <link rel="stylesheet" type="text/css" href ="style.css" />
 </head>
 <body>
-<div id="content">
-<h1>Blog of a Home Network Control Freak</h1>
+<h1>idk's home page</h1>
 
-<p>I like tinkering with my home network, improving it's performance, providing
-self-hosted information services, and experimenting with peer-to-peer means of
-connection.</p>
-</div>
-<div id="sidebar">
+<p>I like to make peer-to-peer things, and think we should structure the future in
+a way which builds in privacy by default in a maximally peer-to-peer way.</p>
+
 <h2>Projects:</h2>
 
-<h3>Home Network/Install Media Projects</h3>
+<p>Besides working on <a href="https://geti2p.net/">I2P</a>, I have a bunch of side-projects
+centered around the use of I2P, especially in Go and Javascript. Some of these
+are also I2P labs projects.</p>
 
-<h4>Self Hosting Projects</h4>
+<h3>I2P Webextensions and Browser Research</h3>
 
 <ul>
-<li><a href="https://eyedeekay.github.io/apt-now/">apt-now, a layer of convenience around reprepro for hosting custom packages</a>
-<ul>
-<li><a href="https://github.com/eyedeekay/apt-now/">apt-now Project Repo</a></li>
-</ul></li>
-<li><a href="https://eyedeekay.github.io/hoarderCache-docker/">apt-cacher-ng in a docker container with experimental, https-only p2p repos preconfigured for caching</a>
-<ul>
-<li><a href="https://github.com/eyedeekay/hoardercache-docker/">HoarderCache-Docker Project Repo</a></li>
-</ul></li>
-<li><a href="https://eyedeekay.github.io/">/Not posted yet: Sharing apt-cacher-ng contents across identically controlled instances with Syncthing</a>
-<ul>
-<li><a href="https://github.com/eyedeekay/hoardercache-syncthing/">HoarderCache-Docker Example</a></li>
-</ul></li>
-<li><a href="https://eyedeekay.github.io/monero-full-node/">/Not posted yet: Managing Monero functions with Docker Containers:</a>
-<ul>
-<li><a href="https://github.com/eyedeekay/monero-full-node">Monero Management with Docker</a></li>
-</ul></li>
+<li><a href="https://eyedeekay.github.io/I2P-in-Private-Browsing-Mode-Firefox/">I2P in Private Browsing Mode for Firefox</a>
+inspired by Brave, this browser extension enforces a few privacy rules for
+Firefox, then implements a set of "Container Tabs" which can be used to browse
+I2P in a way which is automatic and safe.</li>
+<li><a href="https://eyedeekay.github.io/I2P-Configuration-For-Chromium/">I2P Configuration Helper for Chromium</a>
+A fork of the Firefox plugin before it used container tabs, after the user sets
+up an I2P browsing profile this plugin can automatically set up the profile to
+use I2P with the maximum privacy available from Chromium.</li>
+<li><a href="https://eyedeekay.github.io/I2P-Browser-Attackability-Evaluation/">I2P Browser Fingerprint Gallery</a>
+This is an ongoing evaluation of the various ways there are to configure
+browsers for I2P and a developing rating system for them.</li>
 </ul>
 
-<h4>Install Media Projects</h4>
+<h3>Go(golang) I2P Tools</h3>
 
 <ul>
-<li><a href="https://eyedeekay.github.io/hoarderMediaOS/">apt-based GNU+Linux distro install media generation</a>
+<li><a href="https://github.com/eyedeekay/sam-forwarder">samcatd</a>, a.k.a. sam-forwarder
+many of the other applications use sam-forwarder as a way of automatically
+configuring i2ptunnels, including:
 <ul>
-<li><a href="https://github.com/eyedeekay/hoarderMediaOS/">HoaderMediaOS Project Repo</a></li>
+<li><a href="https://github.com/eyedeekay/httptunnel">httptunnel</a> is a standalone http
+proxy for I2P that uses SAM and implements an interface like sam-forwarder.</li>
+<li><a href="https://github.com/eyedeekay/eephttpd">eephttpd</a> is a simple static http
+server with markdown parsing support.</li>
+<li><a href="https://github.com/eyedeekay/gitsam">gitsam</a> is a super-simple git
+repository setup built on eephttpd and <a href="">gitkit</a>.</li>
+<li><a href="https://github.com/eyedeekay/reposam">reposam</a> is a binary deb repository
+built on <a href="">repogen</a>.</li>
+<li><a href="https://github.com/eyedeekay/samtracker">samtracker</a> is a simple torrent
+tracker built upon <a href="">retracker</a>.</li>
+<li><a href="https://github.com/eyedeekay/cowyosam">cowyosam</a> is a pastebin-wiki hybrid
+built on <a href="">cowyo</a></li>
+<li><a href="https://github.com/eyedeekay/colluding_sites_attack">colluding<em>sites</em>attack</a>
+is a tool for fingerprinting browsers as they visit eepSites to determine if
+useful information can be extracted.</li>
+<li><a href="https://github.com/eyedeekay/outproxy">outproxy</a> is a standalone outproxy
+built on SAM. Definitely don't use it if you don't know what you're in for.</li>
+<li><a href="https://github.com/RTradeLtd/libanonvpn">libanonvpn</a> is a VPN library and
+terminal application that uses SAM Datagrams. Sort of like onioncat, but
+cooler.</li>
 </ul></li>
-<li><a href="https://eyedeekay.github.io/kloster/">Alpine Busybox+Linux+Xen+PVM distro install media generation</a>
-<ul>
-<li><a href="https://github.com/eyedeekay/kloster/">Kloster Project Repo</a></li>
-</ul></li>
-<li><a href="https://eyedeekay.github.io/lede-docker/">LEDE Busybox+Linux install media generation</a>
-<ul>
-<li><a href="https://github.com/eyedeekay/lede-docker">LEDE Build Configuration Project Repo</a></li>
-</ul></li>
-<li><a href="https://eyedeekay.github.io/imgmaker/">Live Media generation for Allwinner tablets</a>
-<ul>
-<li><a href="https://github.com/eyedeekay/imgmaker">imgmaker Project Repo</a></li>
-</ul></li>
+<li><a href="https://github.com/eyedeekay/checki2cp">checki2cp</a> is an I2P router presence
+detection tool. Use it to find out if an I2P router is installed.</li>
+<li><a href="https://github.com/eyedeekay/goSam">goSam</a> is a SAM library for Go that
+implements an HTTP Transport.</li>
+<li><a href="https://github.com/eyedeekay/i2pdig">i2pdig</a> is dig, but for I2P. It's been
+a while, I'll update it soon.</li>
+<li><a href="https://github.com/eyedeekay/iget">iget</a> iget is an eepget clone, with some
+extra features and room to grow.</li>
+<li><a href="https://github.com/eyedeekay/keyto">keyto</a> is a text key conversion tool.</li>
+<li><a href="https://github.com/eyedeekay/sam3">sam3</a> is another SAM library for Go, but
+it implements a net.Conn and net.Packetconn making it a near drop-in
+replacement for regular connections.</li>
 </ul>
 
-<h3>Game Development Projects</h3>
-
-<ul>
-<li><a href="https://eyedeekay.github.io/lair-web">LAIR</a>
-<ul>
-<li><a href="https://github.com/eyedeekay/valair">Project Repo</a></li>
-</ul></li>
-</ul>
-
-<h3>Security Projects</h3>
-
-<p><em>Coming soonish</em></p>
-</div>
-<div id="content">
 <h2>Blog:</h2>
 
 <h4>Sun Nov 26 03:21:12 EST 2017</h4>
@@ -94,10 +92,5 @@ them.</p>
 <p>Getting nervous, about to flash an up-to-date coreboot port to my netbook via
 a ch341a flasher. I'm about 99% sure I'm not going to hurt anything, but who
 knows?</p>
-</div>
-<div id="content">
-<h1>Monero Wallet Address</h1>
-
-<p>XMR:43V6cTZrUfAb9JD6Dmn3vjdT9XxLbiE27D1kaoehb359ACaHs8191mR4RsJH7hGjRTiAoSwFQAVdsCBToXXPAqTMDdP2bZB</p>
-</div>
 </body>
+</html>
