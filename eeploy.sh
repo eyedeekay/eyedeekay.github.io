@@ -17,9 +17,9 @@ function setuppage(){
     if [ -d "$DOCROOT" ]; then
         if [ -d "$DOCROOT.git" ]; then
             cd "$DOCROOT" && git pull
-        else
-            git clone "$DOCREPO" "$DOCROOT"
         fi
+    else
+        git clone "$DOCREPO" "$DOCROOT"
     fi
 }
 
