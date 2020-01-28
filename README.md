@@ -13,15 +13,15 @@ are also I2P labs projects.
 
 ### I2P Webextensions and Browser Research
 
- * [I2P in Private Browsing Mode for Firefox](https://eyedeekay.github.io/I2P-in-Private-Browsing-Mode-Firefox/)
+ * [I2P in Private Browsing Mode for Firefox](I2P-in-Private-Browsing-Mode-Firefox/)
  inspired by Brave, this browser extension enforces a few privacy rules for
  Firefox, then implements a set of "Container Tabs" which can be used to browse
  I2P in a way which is automatic and safe.
- * [I2P Configuration Helper for Chromium](https://eyedeekay.github.io/I2P-Configuration-For-Chromium/)
+ * [I2P Configuration Helper for Chromium](I2P-Configuration-For-Chromium/)
  A fork of the Firefox plugin before it used container tabs, after the user sets
  up an I2P browsing profile this plugin can automatically set up the profile to
  use I2P with the maximum privacy available from Chromium.
- * [I2P Browser Fingerprint Gallery](https://eyedeekay.github.io/I2P-Browser-Attackability-Evaluation/)
+ * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.
 

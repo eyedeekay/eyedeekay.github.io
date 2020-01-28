@@ -16,3 +16,4 @@ index: README
 		sed 's|https://github.com/eyedeekay/various-i2p-browsers/tree/master||g' | markdown | tee -a index.html
 	@echo "</body>" >> index.html
 	@echo "</html>" >> index.html
+
