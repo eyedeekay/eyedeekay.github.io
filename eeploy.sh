@@ -24,3 +24,6 @@ function setuppage(){
 }
 
 setuppage $DOCROOT $DOCREPO
+setuppage $FFXDOCROOT $FFXDOCREPO
+setuppage $CHRDOCROOT $CHRDOCREPO
+setuppage $FNGDOCROOT $FNGDOCREPO
