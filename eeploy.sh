@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
-DOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/
-DOCREPO=https://github.com/eyedeekay/eyedeekay.github.io
+IDKDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/
+IDKDOCREPO=https://github.com/eyedeekay/eyedeekay.github.io
 
 FFXDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-in-Private-Browsing-Mode-Firefox/
 FFXDOCREPO=https://github.com/eyedeekay/I2P-in-Private-Browsing-Mode-Firefox
@@ -16,14 +16,14 @@ function setuppage(){
     echo "Setting personal site from $DOCREPO in $DOCROOT"
     if [ -d "$DOCROOT" ]; then
         if [ -d "$DOCROOT.git" ]; then
-            cd "$DOCROOT" && git pull
+            cd "$DOCROOT" && pwd && git pull --all
         fi
     else
         git clone "$DOCREPO" "$DOCROOT"
     fi
 }
 
-setuppage $DOCROOT $DOCREPO
+setuppage $IDKDOCROOT $IDKDOCREPO
 setuppage $FFXDOCROOT $FFXDOCREPO
 setuppage $CHRDOCROOT $CHRDOCREPO
 setuppage $FNGDOCROOT $FNGDOCREPO
