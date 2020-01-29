@@ -3,11 +3,11 @@
 DOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/
 DOCREPO=https://github.com/eyedeekay/eyedeekay.github.io
 
-FFXDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-in-Private-Browsing-Mode-Firefox
+FFXDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-in-Private-Browsing-Mode-Firefox/
 FFXDOCREPO=https://github.com/eyedeekay/I2P-in-Private-Browsing-Mode-Firefox
-CHRDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-Configuration-For-Chromium
+CHRDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-Configuration-For-Chromium/
 CHRDOCREPO=https://github.com/eyedeekay/I2P-Configuration-For-Chromium
-FNGDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-Browser-Attackability-Evaluation
+FNGDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-Browser-Attackability-Evaluation/
 FNGDOCREPO=https://github.com/eyedeekay/I2P-Browser-Attackability-Evaluation
 
 function setuppage(){
