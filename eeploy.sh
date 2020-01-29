@@ -15,7 +15,7 @@ function setuppage(){
     DOCREPO=$2
     echo "Setting personal site from $DOCREPO in $DOCROOT"
     if [ -d "$DOCROOT" ]; then
-        ls "$DOCROOT.git"
+        ls "$DOCROOT was found"
         if [ -d "$DOCROOT.git" ]; then
             cd "$DOCROOT" && pwd && git pull --all
         fi
