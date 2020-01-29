@@ -13,7 +13,9 @@ index: README
 	@echo "</head>" >> index.html
 	@echo "<body>" >> index.html
 	sed "s|magnetsub|[Magnet Link]($(MAGNET))|g" README.md | \
-		sed 's|https://github.com/eyedeekay/various-i2p-browsers/tree/master||g' | markdown | tee -a index.html
+		sed 's|https://github.com/eyedeekay/various-i2p-browsers/tree/master||g' | \
+		markdown | tee -a index.html
+	@echo "  <script src=\"script.js\" type=\"text/javascript\"></script>" >> index.html
 	@echo "</body>" >> index.html
 	@echo "</html>" >> index.html
 
