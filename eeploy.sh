@@ -5,6 +5,8 @@ IDKDOCREPO=https://github.com/eyedeekay/eyedeekay.github.io
 
 FFXDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-in-Private-Browsing-Mode-Firefox/
 FFXDOCREPO=https://github.com/eyedeekay/I2P-in-Private-Browsing-Mode-Firefox
+FFXSTATROOT=/var/lib/i2p/i2p-config/eepsite/docroot/firefox-static/
+FFXSTATREPO=https://github.com/eyedeekay/firefox-static
 CHRDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-Configuration-For-Chromium/
 CHRDOCREPO=https://github.com/eyedeekay/I2P-Configuration-For-Chromium
 FNGDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-Browser-Attackability-Evaluation/
@@ -29,6 +31,7 @@ function setuppage(){
 
 setuppage $IDKDOCROOT $IDKDOCREPO
 setuppage $FFXDOCROOT $FFXDOCREPO
+setuppage $FFXSTATROOT $FFXSTATREPO
 setuppage $CHRDOCROOT $CHRDOCREPO
 setuppage $FNGDOCROOT $FNGDOCREPO
 setuppage $MIRDOCROOT $MIRDOCREPO
