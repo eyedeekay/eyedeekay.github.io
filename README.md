@@ -27,7 +27,7 @@ are also I2P labs projects.
 
 ### Go(golang) I2P Tools
 
- * [samcatd](https://github.com/eyedeekay/sam-forwarder), a.k.a. sam-forwarder
+ * [samcatd](https://github.com/eyedeekay/sam-forwarder) a.k.a. sam-forwarder
  many of the other applications use sam-forwarder as a way of automatically
  configuring i2ptunnels, including:
   - [httptunnel](https://github.com/eyedeekay/httptunnel) is a standalone http
@@ -82,3 +82,7 @@ Also I'm pretty bad at blogging.
 Getting nervous, about to flash an up-to-date coreboot port to my netbook via
 a ch341a flasher. I'm about 99% sure I'm not going to hurt anything, but who
 knows?
+
+#### Tue Mar 31, 15:04:40 EST 2020
+
+See, I told you I was pretty bad at blogging. Over 2 years. Lots of code though.
