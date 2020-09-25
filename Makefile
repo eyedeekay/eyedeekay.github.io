@@ -10,6 +10,7 @@ index: README
 	@echo "<head>" >> index.html
 	@echo "  <title>idk's home page</title>" >> index.html
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> index.html
+	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> index.html
 	@echo "</head>" >> index.html
 	@echo "<body>" >> index.html
 	sed "s|magnetsub|[Magnet Link]($(MAGNET))|g" README.md | \
