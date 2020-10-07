@@ -9,7 +9,7 @@ clean:
 	mkdir -p idk.i2p
 
 torrent:
-	cp -v *.* idk.i2p; true
+	cp -v *.* idk.i2p; true; cp -rv images idk.i2p/images
 	mktorrent -a 'http://g6r5tkh4b6psuxm42kzgmddclbha4cs667wumuqbuzhesu2phy4a.b32.i2p/a' -n 'idk.i2p' -w 'http://idk.i2p' -w 'http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p' -o idk.i2p.torrent idk.i2p
 	rm -rf ~/.i2p/i2psnark/idk.i2p
 
