@@ -18,6 +18,7 @@ are also I2P labs projects.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.
+ * [InfoGraphic Gallery for testing X-I2P-TorrentLocation](infographics.html)
 
 ### Go(golang) I2P Tools
 

@@ -15,15 +15,32 @@ torrent:
 
 up:
 	cp idk.i2p.torrent ~/.i2p/i2psnark/idk.i2p.torrent
-	mv ./idk.i2p ~/.i2p/i2psnark/idk.i2p
+	cp -rv ./idk.i2p ~/.i2p/i2psnark/idk.i2p
 
 README:
 	cat yTop.md ySidebar.md zBlog.md | tee README.md
 
+info:
+	@echo "<!DOCTYPE html>" > infographics.html
+	@echo "<html>" >> infographics.html
+	@echo "<head>" >> infographics.html
+	@echo "  <title>idk's home page</title>" >> infographics.html
+	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> infographics.html
+	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> infographics.html
+	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`torrent2magnet idk.i2p.torrent`"\"/>" >> infographics.html
+	@echo "</head>" >> infographics.html
+	@echo "<body>" >> infographics.html
+	sed "s|magnetsub|[Magnet Link]($(magnet))|g" infographics.md | \
+		sed 's|https://github.com/eyedeekay/various-i2p-browsers/tree/master||g' | \
+		markdown | tee -a infographics.html
+	@echo "  <script src=\"script.js\" type=\"text/javascript\"></script>" >> infographics.html
+	@echo "</body>" >> infographics.html
+	@echo "</html>" >> infographics.html
+
 mag:
 	@echo `torrent2magnet idk.i2p.torrent`
 
-index: README
+index: README info
 	@echo "<!DOCTYPE html>" > index.html
 	@echo "<html>" >> index.html
 	@echo "<head>" >> index.html
