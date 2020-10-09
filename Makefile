@@ -2,7 +2,7 @@
 dummy:
 	@echo 'type make all then make index then push to ghp'
 
-all: clean index torrent up 
+all: clean index torrent index up 
 
 clean:
 	rm -rf idk.i2p .torrent idk.i2p.torrent ~/.i2p/i2psnark/idk.i2p ~/.i2p/i2psnark/idk.i2p.torrent tmp
