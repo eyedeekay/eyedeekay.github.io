@@ -18,7 +18,14 @@ are also I2P labs projects.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.
- * [InfoGraphic Gallery for testing X-I2P-TorrentLocation](infographics.html)
+ * [InfoGraphic Gallery for testing X-I2P-TorrentLocation](infographics.html) This
+ page is to test X-I2P-TorrentLocation. It embeds a bunch of large images/infographics
+ I collected off of reddit and is intentionally heavy so it may be slow to load. It will
+ use torrent-based resources if I2P In Private Browsing mode is installed and the idk.i2p
+ torrent is downloaded.
+ * [Videos about I2P Gallery for testing X-I2P-TorrentLocation](video.html) This page
+ is even heavier, it embeds videos that have to do with I2P and other crypto/privacy/overlay
+ networking related topics.
 
 ### Go(golang) I2P Tools
 
