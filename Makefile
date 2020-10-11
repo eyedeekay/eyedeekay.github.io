@@ -9,7 +9,7 @@ clean:
 	mkdir -p idk.i2p
 
 torrent:
-	cp -v *.* idk.i2p; true; cp -rv images idk.i2p/images; cp -rv video idk.i2p/video; cp -rv plugins idk.i2p/plugins && cp -rv .git idk.i2p/.git && rm -f idk.i2p/idk.i2p.torrent
+	cp -v *.* idk.i2p; true; cp -rv images idk.i2p/images; cp -rv video idk.i2p/video; cp -rv plugins idk.i2p/plugins && cp -rv .git idk.i2p/.git && rm -f idk.i2p/idk.i2p.torrent idk.i2p/idk.i2p.zip
 	mktorrent -a 'http://w7tpbzncbcocrqtwwm3nezhnnsw4ozadvi2hmvzdhrqzfxfum7wa.b32.i2p/a' \
 		-a 'http://uajd4nctepxpac4c4bdyrdw7qvja2a5u3x25otfhkptcjgd53ioq.b32.i2p/announce' \
 		-a 'http://s5ikrdyjwbcgxmqetxb3nyheizftms7euacuub2hic7defkh3xhq.b32.i2p/a' \
