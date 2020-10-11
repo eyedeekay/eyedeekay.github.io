@@ -21,3 +21,9 @@ knows?
 #### Tue Mar 31, 15:04:40 EST 2020
 
 See, I told you I was pretty bad at blogging. Over 2 years. Lots of code though.
+
+#### Sun Oct 11, 04:08:56 EDT 2020
+
+Note to self: from now on, build the site with:
+
+`make all && make seed && git commit -am "Example commit message" && git push --all`

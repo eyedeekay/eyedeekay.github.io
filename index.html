@@ -4,7 +4,7 @@
   <title>idk's home page</title>
   <link rel="stylesheet" type="text/css" href ="style.css" />
   <meta http-equiv="i2p-location" content="http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p"/>
-  <meta http-equiv="i2p-torrentlocation" content="magnet:?xt=urn:btih:b65e8b369808c1e2bca7fb138dd242fc42447bcf"/>
+  <meta http-equiv="i2p-torrentlocation" content="magnet:?xt=urn:btih:9f79632a1f46a63a779e18129e720e1df5e6d3ee"/>
 </head>
 <body>
 <h1>idk's home page</h1>
@@ -33,6 +33,16 @@ use I2P with the maximum privacy available from Chromium.</li>
 This is an ongoing evaluation of the various ways there are to configure
 browsers for I2P and a developing rating system for them.</li>
 </ul>
+
+<h3>I2P Git Hosting</h3>
+
+<p>I host git services on I2P at <a href="http://git.idk.i2p/">git.idk.i2p</a>, with a non-anonymous
+mirror available at <a href="https://i2pgit.org">i2pgit.org</a>. I provide this service freely to
+the I2P community and it is open to the public, but do have a Terms of Service which
+is predicated on my own threat model. If the TOS is not acceptable to you, I highly
+encourage you to run your own gitlab instance using the instructions I wrote, available
+on the I2P project <a href="http://i2p-projekt.i2p/en/docs/applications/gitlab">I2P Site</a> and
+on the <a href="https://geti2p.net/en/docs/applications/gitlab">Web</a>.</p>
 
 <h3>What's Weird about this I2P Site?</h3>
 
@@ -63,7 +73,10 @@ is even heavier, it embeds videos that have to do with I2P and other crypto/priv
 networking related topics.</li>
 <li><a href="plugins.html">Plugin Archive</a> This page is my mirror of the plugin archive at
 <a href="http://stats.i2p/i2p/plugins">stats.i2p</a>. I created one here because the <em>utility</em> of
-x-i2p-torrentlocation is that</li>
+X-I2P-TorrentLocation is that it allows you to mingle the versatile presentation abilities
+of hypertext with redundant, peer-to-peer resources, and by using it for plugins, we can
+make it much harder to take them down by taking down their archives. The same would apply
+for any software, actually, this is just where I started.</li>
 </ul>
 
 <h3>Go(golang) I2P Tools</h3>
@@ -130,6 +143,12 @@ knows?</p>
 <h4>Tue Mar 31, 15:04:40 EST 2020</h4>
 
 <p>See, I told you I was pretty bad at blogging. Over 2 years. Lots of code though.</p>
+
+<h4>Sun Oct 11, 04:08:56 EDT 2020</h4>
+
+<p>Note to self: from now on, build the site with:</p>
+
+<p><code>make all &amp;&amp; make seed &amp;&amp; git commit -am "Example commit message" &amp;&amp; git push --all</code></p>
   <script src="script.js" type="text/javascript"></script>
 </body>
 </html>

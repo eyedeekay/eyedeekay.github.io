@@ -24,6 +24,16 @@ are also I2P labs projects.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.
+ 
+### I2P Git Hosting
+
+I host git services on I2P at [git.idk.i2p](http://git.idk.i2p/), with a non-anonymous
+mirror available at [i2pgit.org](https://i2pgit.org). I provide this service freely to
+the I2P community and it is open to the public, but do have a Terms of Service which
+is predicated on my own threat model. If the TOS is not acceptable to you, I highly
+encourage you to run your own gitlab instance using the instructions I wrote, available
+on the I2P project [I2P Site](http://i2p-projekt.i2p/en/docs/applications/gitlab) and
+on the [Web](https://geti2p.net/en/docs/applications/gitlab).
 
 ### What's Weird about this I2P Site?
 
@@ -53,7 +63,10 @@ content via their HTTP Proxies, and will be doing it less repeatedly.
  networking related topics.
  * [Plugin Archive](plugins.html) This page is my mirror of the plugin archive at
  [stats.i2p](http://stats.i2p/i2p/plugins). I created one here because the *utility* of
- x-i2p-torrentlocation is that
+ X-I2P-TorrentLocation is that it allows you to mingle the versatile presentation abilities
+ of hypertext with redundant, peer-to-peer resources, and by using it for plugins, we can
+ make it much harder to take them down by taking down their archives. The same would apply
+ for any software, actually, this is just where I started.
 
 ### Go(golang) I2P Tools
 
@@ -116,3 +129,9 @@ knows?
 #### Tue Mar 31, 15:04:40 EST 2020
 
 See, I told you I was pretty bad at blogging. Over 2 years. Lots of code though.
+
+#### Sun Oct 11, 04:08:56 EDT 2020
+
+Note to self: from now on, build the site with:
+
+`make all && make seed && git commit -am "Example commit message" && git push --all`

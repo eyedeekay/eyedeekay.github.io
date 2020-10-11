@@ -18,6 +18,16 @@ are also I2P labs projects.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.
+ 
+### I2P Git Hosting
+
+I host git services on I2P at [git.idk.i2p](http://git.idk.i2p/), with a non-anonymous
+mirror available at [i2pgit.org](https://i2pgit.org). I provide this service freely to
+the I2P community and it is open to the public, but do have a Terms of Service which
+is predicated on my own threat model. If the TOS is not acceptable to you, I highly
+encourage you to run your own gitlab instance using the instructions I wrote, available
+on the I2P project [I2P Site](http://i2p-projekt.i2p/en/docs/applications/gitlab) and
+on the [Web](https://geti2p.net/en/docs/applications/gitlab).
 
 ### What's Weird about this I2P Site?
 

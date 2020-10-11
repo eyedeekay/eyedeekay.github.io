@@ -16,17 +16,21 @@ torrent:
 		-a 'http://432m3mpxomy2bqccjmjru7gfeicockx7un5eni5i5uqxgakcvq6a.b32.i2p/a' \
 		-a 'http://niat6zw3p5wl473256bottv3kaybodhum2omlt3bl42oiirwf5xa.b32.i2p/a' \
 		-n 'idk.i2p' -w 'http://idk.i2p' -w 'http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p' -o idk.i2p.torrent idk.i2p
-	zip -r idk.i2p.zip idk.i2p
 	rm -rf ~/.i2p/i2psnark/idk.i2p
 
-seed:
+seed: index curl upload
+
+curl:
 	@echo "#! /usr/bin/env bash" | tee curl.sh
 	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.torrent https://eyedeekay.github.io/idk.i2p.torrent" | tee -a curl.sh
-	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/`torrent2magnet idk.i2p.torrent`/idk.i2p.zip" | tee -a curl.sh
+	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet/idk.i2p.zip" | tee -a curl.sh
 	@echo "unzip idk.i2p.zip -d ~/.i2p/i2psnark/idk.i2p" | tee -a curl.sh
-	gothub release -p -u eyedeekay -r I2P-in-Private-Browsing-Mode-Firefox -t `torrent2magnet idk.i2p.torrent` -n "`torrent2magnet idk.i2p.torrent`" -d "Site snapshot as of `date`"
-	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent` -n idk.i2p.torrent -f idk.i2p.torrent
-	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent` -n idk.i2p.zip -f idk.i2p.zip
+	zip -r idk.i2p.zip idk.i2p
+
+upload:
+	gothub release -p -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n "`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`".magnet -d "Site snapshot as of `date`"
+	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.torrent -f idk.i2p.torrent
+	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.zip -f idk.i2p.zip
 
 up:
 	cp idk.i2p.torrent ~/.i2p/i2psnark/idk.i2p.torrent
@@ -94,6 +98,7 @@ vid:
 
 mag:
 	@echo `torrent2magnet idk.i2p.torrent`
+	@echo `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`
 
 index: README info vid plug
 	@echo "<!DOCTYPE html>" > index.html
