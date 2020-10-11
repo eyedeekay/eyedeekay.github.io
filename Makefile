@@ -23,7 +23,7 @@ seed: index curl upload
 curl:
 	@echo "#! /usr/bin/env bash" | tee curl.sh
 	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.torrent https://eyedeekay.github.io/idk.i2p.torrent" | tee -a curl.sh
-	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/archive/`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet.zip" | tee -a curl.sh
+	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/archive/master.zip" | tee -a curl.sh
 	#@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet/idk.i2p.zip" | tee -a curl.sh
 	@echo "unzip -j ~/.i2p/i2psnark/idk.i2p.zip -d ~/.i2p/i2psnark/idk.i2p" | tee -a curl.sh
 	zip -r idk.i2p.zip idk.i2p
