@@ -9,9 +9,24 @@ clean:
 	mkdir -p idk.i2p
 
 torrent:
-	cp -v *.* idk.i2p; true; cp -rv images idk.i2p/images; cp -rv video idk.i2p/video
-	mktorrent -a 'http://g6r5tkh4b6psuxm42kzgmddclbha4cs667wumuqbuzhesu2phy4a.b32.i2p/a' -n 'idk.i2p' -w 'http://idk.i2p' -w 'http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p' -o idk.i2p.torrent idk.i2p
+	cp -v *.* idk.i2p; true; cp -rv images idk.i2p/images; cp -rv video idk.i2p/video; cp -rv plugins idk.i2p/plugins && cp -rv .git idk.i2p/.git
+	mktorrent -a 'http://w7tpbzncbcocrqtwwm3nezhnnsw4ozadvi2hmvzdhrqzfxfum7wa.b32.i2p/a' \
+		-a 'http://uajd4nctepxpac4c4bdyrdw7qvja2a5u3x25otfhkptcjgd53ioq.b32.i2p/announce' \
+		-a 'http://s5ikrdyjwbcgxmqetxb3nyheizftms7euacuub2hic7defkh3xhq.b32.i2p/a' \
+		-a 'http://432m3mpxomy2bqccjmjru7gfeicockx7un5eni5i5uqxgakcvq6a.b32.i2p/a' \
+		-a 'http://niat6zw3p5wl473256bottv3kaybodhum2omlt3bl42oiirwf5xa.b32.i2p/a' \
+		-n 'idk.i2p' -w 'http://idk.i2p' -w 'http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p' -o idk.i2p.torrent idk.i2p
+	zip -r idk.i2p.zip idk.i2p
 	rm -rf ~/.i2p/i2psnark/idk.i2p
+
+seed:
+	@echo "#! /usr/bin/env bash" | tee curl.sh
+	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.torrent https://eyedeekay.github.io/idk.i2p.torrent" | tee -a curl.sh
+	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/`torrent2magnet idk.i2p.torrent`/idk.i2p.zip" | tee -a curl.sh
+	@echo "unzip idk.i2p.zip -d ~/.i2p/i2psnark/idk.i2p" | tee -a curl.sh
+	gothub release -p -u eyedeekay -r I2P-in-Private-Browsing-Mode-Firefox -t `torrent2magnet idk.i2p.torrent` -n "`torrent2magnet idk.i2p.torrent`" -d "Site snapshot as of `date`"
+	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent` -n idk.i2p.torrent -f idk.i2p.torrent
+	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent` -n idk.i2p.zip -f idk.i2p.zip
 
 up:
 	cp idk.i2p.torrent ~/.i2p/i2psnark/idk.i2p.torrent
@@ -19,6 +34,23 @@ up:
 
 README:
 	cat yTop.md ySidebar.md zBlog.md | tee README.md
+
+plug:
+	@echo "<!DOCTYPE html>" > plugins.html
+	@echo "<html>" >> plugins.html
+	@echo "<head>" >> plugins.html
+	@echo "  <title>idk's home page</title>" >> plugins.html
+	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> plugins.html
+	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> plugins.html
+	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`torrent2magnet idk.i2p.torrent`"\"/>" >> plugins.html
+	@echo "</head>" >> plugins.html
+	@echo "<body>" >> plugins.html
+	sed "s|magnetsub|[Magnet Link]($(magnet))|g" plugins.md | \
+		sed 's|https://github.com/eyedeekay/various-i2p-browsers/tree/master||g' | \
+		markdown | tee -a plugins.html
+	@echo "  <script src=\"script.js\" type=\"text/javascript\"></script>" >> plugins.html
+	@echo "</body>" >> plugins.html
+	@echo "</html>" >> plugins.html
 
 info:
 	@echo "<!DOCTYPE html>" > infographics.html
@@ -63,7 +95,7 @@ vid:
 mag:
 	@echo `torrent2magnet idk.i2p.torrent`
 
-index: README info vid
+index: README info vid plug
 	@echo "<!DOCTYPE html>" > index.html
 	@echo "<html>" >> index.html
 	@echo "<head>" >> index.html

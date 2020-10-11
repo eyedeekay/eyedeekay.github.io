@@ -4,7 +4,7 @@
   <title>idk's home page</title>
   <link rel="stylesheet" type="text/css" href ="style.css" />
   <meta http-equiv="i2p-location" content="http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p"/>
-  <meta http-equiv="i2p-torrentlocation" content="magnet:?xt=urn:btih:7d79882a3eb89374c96db6dd1307f70ce5d8c20d"/>
+  <meta http-equiv="i2p-torrentlocation" content="magnet:?xt=urn:btih:b65e8b369808c1e2bca7fb138dd242fc42447bcf"/>
 </head>
 <body>
 <h1>idk's home page</h1>
@@ -32,6 +32,27 @@ use I2P with the maximum privacy available from Chromium.</li>
 <li><a href="I2P-Browser-Attackability-Evaluation/">I2P Browser Fingerprint Gallery</a>
 This is an ongoing evaluation of the various ways there are to configure
 browsers for I2P and a developing rating system for them.</li>
+</ul>
+
+<h3>What's Weird about this I2P Site?</h3>
+
+<p>This I2P site uses an experimental feature of I2P in Private browsing called 
+X-I2P-TorrentLocation. If you are using the latest version of the extension, you
+may notice that there is a pageAction available in the URL bar(It's the little I2P
+logo). If you click that pageAction and follow the magnet link, you will begin to
+download a torrent named idk.i2p. As the torrent completes, the extension will begin
+to replace on-page resources hosted on my server with exactly the same files, except
+shared and downloaded via I2PSnark. The result is a sort of distributed, voluntary
+pseudo-CDN which makes it possible to do things like embed videos directly in your
+I2P Site and actually have them play completely. All of this is accomplished, of
+course, by cheating. If you download the torrent, the file is on your computer, so
+of course it's available in a reliable way. Besides that, even if your content
+goes down, any of your visitors will be able to reproduce your site on a new hostname,
+which may provide a level of resistance to being taken down. How it affects traffic
+flows remains to be seen, but it means that some I2P users will be fetching less
+content via their HTTP Proxies, and will be doing it less repeatedly.</p>
+
+<ul>
 <li><a href="infographics.html">InfoGraphic Gallery for testing X-I2P-TorrentLocation</a> This
 page is to test X-I2P-TorrentLocation. It embeds a bunch of large images/infographics
 I collected off of reddit and is intentionally heavy so it may be slow to load. It will
@@ -40,6 +61,9 @@ torrent is downloaded.</li>
 <li><a href="video.html">Videos about I2P Gallery for testing X-I2P-TorrentLocation</a> This page
 is even heavier, it embeds videos that have to do with I2P and other crypto/privacy/overlay
 networking related topics.</li>
+<li><a href="plugins.html">Plugin Archive</a> This page is my mirror of the plugin archive at
+<a href="http://stats.i2p/i2p/plugins">stats.i2p</a>. I created one here because the <em>utility</em> of
+x-i2p-torrentlocation is that</li>
 </ul>
 
 <h3>Go(golang) I2P Tools</h3>

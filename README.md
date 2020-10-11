@@ -24,6 +24,25 @@ are also I2P labs projects.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.
+
+### What's Weird about this I2P Site?
+
+This I2P site uses an experimental feature of I2P in Private browsing called 
+X-I2P-TorrentLocation. If you are using the latest version of the extension, you
+may notice that there is a pageAction available in the URL bar(It's the little I2P
+logo). If you click that pageAction and follow the magnet link, you will begin to
+download a torrent named idk.i2p. As the torrent completes, the extension will begin
+to replace on-page resources hosted on my server with exactly the same files, except
+shared and downloaded via I2PSnark. The result is a sort of distributed, voluntary
+pseudo-CDN which makes it possible to do things like embed videos directly in your
+I2P Site and actually have them play completely. All of this is accomplished, of
+course, by cheating. If you download the torrent, the file is on your computer, so
+of course it's available in a reliable way. Besides that, even if your content
+goes down, any of your visitors will be able to reproduce your site on a new hostname,
+which may provide a level of resistance to being taken down. How it affects traffic
+flows remains to be seen, but it means that some I2P users will be fetching less
+content via their HTTP Proxies, and will be doing it less repeatedly.
+
  * [InfoGraphic Gallery for testing X-I2P-TorrentLocation](infographics.html) This
  page is to test X-I2P-TorrentLocation. It embeds a bunch of large images/infographics
  I collected off of reddit and is intentionally heavy so it may be slow to load. It will
@@ -32,6 +51,9 @@ are also I2P labs projects.
  * [Videos about I2P Gallery for testing X-I2P-TorrentLocation](video.html) This page
  is even heavier, it embeds videos that have to do with I2P and other crypto/privacy/overlay
  networking related topics.
+ * [Plugin Archive](plugins.html) This page is my mirror of the plugin archive at
+ [stats.i2p](http://stats.i2p/i2p/plugins). I created one here because the *utility* of
+ x-i2p-torrentlocation is that
 
 ### Go(golang) I2P Tools
 
