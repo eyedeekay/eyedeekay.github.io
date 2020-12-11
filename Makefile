@@ -61,7 +61,7 @@ curl:
 upload: upload-release upload-torrent upload-zip
 
 upload-release:
-	gothub release -p -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n "`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`".magnet -d "Site snapshot as of `date`"
+	gothub release -p -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n "`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`".magnet -d "Site snapshot as of `date`"; true
 
 upload-torrent:
 	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.torrent -f idk.i2p.torrent

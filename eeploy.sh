@@ -1,6 +1,9 @@
 #! /usr/bin/env bash
 
-IDKDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot
+if [ -z "$IDKDOCROOT" ]; then
+  IDKDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot
+fi
+
 IDKDOCREPO=https://github.com/eyedeekay/eyedeekay.github.io
 
 FFXDOCROOT=$IDKDOCROOT/I2P-in-Private-Browsing-Mode-Firefox/
