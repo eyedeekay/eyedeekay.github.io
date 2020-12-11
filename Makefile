@@ -15,7 +15,37 @@ torrent:
 		-a 'http://s5ikrdyjwbcgxmqetxb3nyheizftms7euacuub2hic7defkh3xhq.b32.i2p/a' \
 		-a 'http://432m3mpxomy2bqccjmjru7gfeicockx7un5eni5i5uqxgakcvq6a.b32.i2p/a' \
 		-a 'http://niat6zw3p5wl473256bottv3kaybodhum2omlt3bl42oiirwf5xa.b32.i2p/a' \
-		-n 'idk.i2p' -w 'http://idk.i2p' -w 'http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p' -o idk.i2p.torrent idk.i2p
+		-a http://explodie.org:6969/announce \
+		-a http://tracker.opentrackr.org:1337/announce \
+		-a http://tracker.kamigami.org:2710/announce \
+		-a http://tracker.internetwarriors.net:1337/announce \
+		-a http://tracker.darli.net:6611/announce \
+		-a http://tracker.corpscorp.online:80/announce \
+		-a http://tracker.bz:80/announce \
+		-a http://tracker.bt4g.com:2095/announce \
+		-a http://retracker.sevstar.net:2710/announce \
+		-a http://h4.trakx.nibba.trade:80/announce \
+		-a http://www.proxmox.com:6969/announce \
+		-a http://www.loushao.net:8080/announce \
+		-a http://vps02.net.orel.ru:80/announce \
+		-a http://tracker4.itzmx.com:2710/announce \
+		-a http://tracker3.itzmx.com:6961/announce \
+		-a http://tracker2.itzmx.com:6961/announce \
+		-a http://tracker1.itzmx.com:8080/announce \
+		-a http://tracker01.loveapp.com:6789/announce \
+		-a http://tracker.zerobytes.xyz:1337/announce \
+		-a http://tracker.yoshi210.com:6969/announce \
+		-a http://tracker.torrentyorg.pl:80/announce \
+		-a http://tracker.nyap2p.com:8080/announce \
+		-a http://tracker.lelux.fi:80/announce \
+		-a http://tracker.gbitt.info:80/announce \
+		-a http://pow7.com:80/announce \
+		-a http://opentracker.i2p.rocks:6969/announce \
+		-a http://open.acgtracker.com:1096/announce \
+		-a http://open.acgnxtracker.com:80/announce \
+		-a http://mail2.zelenaya.net:80/announce \
+		-a http://acg.rip:6699/announce \
+		-n 'idk.i2p' -w 'http://idk.i2p' -w 'http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p' -w 'https://eyedeekay.github.io' -o idk.i2p.torrent idk.i2p
 	rm -rf ~/.i2p/i2psnark/idk.i2p ~/.i2p/i2psnark/idk.i2p.torrent
 
 seed: index curl upload
@@ -25,9 +55,7 @@ curl:
 	@echo "rm -rfv ~/.i2p/i2psnark/idk.i2p ~/.i2p/i2psnark/idk.i2p.torrent ~/.i2p/i2psnark/idk.i2p.zip" | tee -a curl.sh
 	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/current/idk.i2p.zip" | tee -a curl.sh
 	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.torrent https://eyedeekay.github.io/idk.i2p.torrent" | tee -a curl.sh
-	#@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet/idk.i2p.zip" | tee -a curl.sh
 	@echo "unzip ~/.i2p/i2psnark/idk.i2p.zip -d ~/.i2p/i2psnark/" | tee -a curl.sh
-	#@echo "mv ~/.i2p/i2psnark/eyedeekay.github.io-master ~/.i2p/i2psnark/idk.i2p" | tee -a curl.sh
 	zip -r idk.i2p.zip idk.i2p
 
 upload: upload-release upload-torrent upload-zip
@@ -115,7 +143,6 @@ vid:
 	@echo "  <script src=\"script.js\" type=\"text/javascript\"></script>" >> video.html
 	@echo "</body>" >> video.html
 	@echo "</html>" >> video.html
-
 
 mag:
 	@echo `torrent2magnet idk.i2p.torrent`

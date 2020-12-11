@@ -1,18 +1,20 @@
 #! /usr/bin/env bash
 
-IDKDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/
+IDKDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot
 IDKDOCREPO=https://github.com/eyedeekay/eyedeekay.github.io
 
-FFXDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-in-Private-Browsing-Mode-Firefox/
+FFXDOCROOT=$IDKDOCROOT/I2P-in-Private-Browsing-Mode-Firefox/
 FFXDOCREPO=https://github.com/eyedeekay/I2P-in-Private-Browsing-Mode-Firefox
-FFXSTATROOT=/var/lib/i2p/i2p-config/eepsite/docroot/firefox-static/
+FFXSTATROOT=$IDKDOCROOT/firefox-static/
 FFXSTATREPO=https://github.com/eyedeekay/firefox-static
-CHRDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-Configuration-For-Chromium/
+CHRDOCROOT=$IDKDOCROOT/I2P-Configuration-For-Chromium/
 CHRDOCREPO=https://github.com/eyedeekay/I2P-Configuration-For-Chromium
-FNGDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/I2P-Browser-Attackability-Evaluation/
+FNGDOCROOT=$IDKDOCROOT/I2P-Browser-Attackability-Evaluation/
 FNGDOCREPO=https://github.com/eyedeekay/I2P-Browser-Attackability-Evaluation
-MIRDOCROOT=/var/lib/i2p/i2p-config/eepsite/docroot/mirror/
+MIRDOCROOT=$IDKDOCROOT/mirror/
 MIRDOCREPO=https://github.com/eyedeekay/mirror
+BUNDOCROOT=$IDKDOCROOT/bundles/
+BUNDOCREPO=https://github.com/eyedeeekay/i2p.i2p.git.bundles
 
 
 function setuppage(){
@@ -35,3 +37,4 @@ setuppage $FFXSTATROOT $FFXSTATREPO
 setuppage $CHRDOCROOT $CHRDOCREPO
 setuppage $FNGDOCROOT $FNGDOCREPO
 setuppage $MIRDOCROOT $MIRDOCREPO
+setuppage $BUNDOCROOT $BUNDOCREPO
