@@ -14,7 +14,7 @@ FNGDOCREPO=https://github.com/eyedeekay/I2P-Browser-Attackability-Evaluation
 MIRDOCROOT=$IDKDOCROOT/mirror/
 MIRDOCREPO=https://github.com/eyedeekay/mirror
 BUNDOCROOT=$IDKDOCROOT/bundles/
-BUNDOCREPO=https://github.com/eyedeeekay/i2p.i2p.git.bundles
+BUNDOCREPO=https://github.com/eyedeekay/i2p.i2p.git.bundles
 
 
 function setuppage(){
