@@ -26,6 +26,12 @@ MIRDOCREPO=https://github.com/eyedeekay/mirror
 JPAKDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p/
 JPAKDOCREPO=https://github.com/eyedeekay/i2p
 
+EEPDOCROOT="$CONFIGDOCROOT"eepsite/docroot/eephttpd/
+EEPDOCREPO=https://github.com/eyedeekay/eephttpd
+
+BRBDOCROOT="$CONFIGDOCROOT"eepsite/docroot/brb/
+BRBDOCREPO=https://github.com/eyedeekay/brb
+
 RAILDOCROOT="$CONFIGDOCROOT"eepsite/docroot/railroad/
 RAILDOCREPO=https://github.com/eyedeekay/railroad
 
@@ -50,4 +56,6 @@ setuppage $CHRDOCROOT $CHRDOCREPO
 setuppage $FNGDOCROOT $FNGDOCREPO
 setuppage $RAILDOCROOT $RAILDOCREPO
 setuppage $JPAKDOCROOT $JPAKDOCREPO
+setuppage $EEPDOCROOT $EEPDOCREPO
+setuppage $BRBDOCROOT $BRBDOCREPO
 setuppage $MIRDOCROOT $MIRDOCREPO
