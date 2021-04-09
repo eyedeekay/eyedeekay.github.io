@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-if [ whoami = i2psvc ]; then
+if [ `whoami` = i2psvc ]; then
     CONFIGDOCROOT="/var/lib/i2p/i2p-config/eepsite/docroot"
 else
     CONFIGDOCROOT=$HOME/.i2p/eepsite/docroot
@@ -41,7 +41,7 @@ function setuppage(){
     echo "Setting personal site from $DOCREPO in $DOCROOT"
     if [ -d "$DOCROOT" ]; then
         if [ -d "$DOCROOT.git" ]; then
-            cd "$DOCROOT" && pwd && git pull --all
+            cd "$DOCROOT" && pwd && git pull --ff-only --all
             cd "$DOCROOT" && git submodule update --recursive --remote
         fi
     else
