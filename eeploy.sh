@@ -1,9 +1,9 @@
 #! /usr/bin/env bash
 
 if [ `whoami` = i2psvc ]; then
-    CONFIGDOCROOT="/var/lib/i2p/i2p-config/eepsite/docroot"
+    CONFIGDOCROOT="/var/lib/i2p/i2p-config/"
 else
-    CONFIGDOCROOT=$HOME/.i2p/eepsite/docroot
+    CONFIGDOCROOT=$HOME/.i2p/
 fi
 
 IDKDOCROOT="$CONFIGDOCROOT"eepsite/docroot/
