@@ -15,6 +15,14 @@ are also I2P labs projects.
  A fork of the Firefox plugin before it used container tabs, after the user sets
  up an I2P browsing profile this plugin can automatically set up the profile to
  use I2P with the maximum privacy available from Chromium.
+ * [Railroad Anonymous Blogging Platform](railroad/) Railroad is a simple tool
+ for anonymous blogging built on [github.com/kabukky/journey](https://github.com/kabukky/journey)
+ and retaining most of it's features, while adding a few to make it suitable for
+ use as a destkop-based I2P application.
+ * [Experimental I2P Jpackage Installers](i2p/) Jpackage is a tool for bundling
+ Java software with all the runtime dependencies and a Java environment which are
+ required to make them work. We may be able to use this to create easier-to-use
+ I2P installers.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.

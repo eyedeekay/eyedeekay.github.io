@@ -25,7 +25,7 @@ curl:
 	@echo "rm -rfv ~/.i2p/i2psnark/idk.i2p ~/.i2p/i2psnark/idk.i2p.torrent ~/.i2p/i2psnark/idk.i2p.zip" | tee -a curl.sh
 	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/current/idk.i2p.zip" | tee -a curl.sh
 	@echo "wget -O ~/.i2p/i2psnark/idk.i2p.torrent https://eyedeekay.github.io/idk.i2p.torrent" | tee -a curl.sh
-	#@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet/idk.i2p.zip" | tee -a curl.sh
+	#@echo "wget -O ~/.i2p/i2psnark/idk.i2p.zip https://github.com/eyedeekay/eyedeekay.github.io/releases/download/`rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet/idk.i2p.zip" | tee -a curl.sh
 	@echo "unzip ~/.i2p/i2psnark/idk.i2p.zip -d ~/.i2p/i2psnark/" | tee -a curl.sh
 	#@echo "mv ~/.i2p/i2psnark/eyedeekay.github.io-master ~/.i2p/i2psnark/idk.i2p" | tee -a curl.sh
 	zip -r idk.i2p.zip idk.i2p
@@ -33,13 +33,13 @@ curl:
 upload: upload-release upload-torrent upload-zip
 
 upload-release:
-	gothub release -p -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n "`torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`".magnet -d "Site snapshot as of `date`"
+	gothub release -p -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n "`rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`".magnet -d "Site snapshot as of `date`"
 
 upload-torrent:
-	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.torrent -f idk.i2p.torrent
+	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.torrent -f idk.i2p.torrent
 
 upload-zip:
-	gothub -v upload -R -u eyedeekay -r eyedeekay.github.io -t `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.zip -f idk.i2p.zip
+	gothub -v upload -R -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.zip -f idk.i2p.zip
 
 current: current-release current-torrent current-zip
 
@@ -67,7 +67,7 @@ plug:
 	@echo "  <title>idk's home page</title>" >> plugins.html
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> plugins.html
 	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> plugins.html
-	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`torrent2magnet idk.i2p.torrent`"\"/>" >> plugins.html
+	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`rhash -g idk.i2p.torrent`"\"/>" >> plugins.html
 	@echo "</head>" >> plugins.html
 	@echo "<body>" >> plugins.html
 	sed "s|magnetsub|[Magnet Link]($(magnet))|g" plugins.md | \
@@ -84,7 +84,7 @@ info:
 	@echo "  <title>idk's home page</title>" >> infographics.html
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> infographics.html
 	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> infographics.html
-	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`torrent2magnet idk.i2p.torrent`"\"/>" >> infographics.html
+	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`rhash -g idk.i2p.torrent`"\"/>" >> infographics.html
 	@echo "</head>" >> infographics.html
 	@echo "<body>" >> infographics.html
 	sed "s|magnetsub|[Magnet Link]($(magnet))|g" infographics.md | \
@@ -101,7 +101,7 @@ vid:
 	@echo "  <title>idk's home page</title>" >> video.html
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> video.html
 	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> video.html
-	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`torrent2magnet idk.i2p.torrent`"\"/>" >> video.html
+	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`rhash -g idk.i2p.torrent`"\"/>" >> video.html
 	@echo "</head>" >> video.html
 	@echo "<body>" >> video.html
 	sed "s|magnetsub|[Magnet Link]($(magnet))|g" videos.md | \
@@ -118,8 +118,8 @@ vid:
 
 
 mag:
-	@echo `torrent2magnet idk.i2p.torrent`
-	@echo `torrent2magnet idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`
+	@echo `rhash -g idk.i2p.torrent`
+	@echo `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`
 
 index: README info vid plug curl
 	@echo "<!DOCTYPE html>" > index.html
@@ -128,7 +128,7 @@ index: README info vid plug curl
 	@echo "  <title>idk's home page</title>" >> index.html
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> index.html
 	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> index.html
-	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`torrent2magnet idk.i2p.torrent`"\"/>" >> index.html
+	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`rhash -g idk.i2p.torrent`"\"/>" >> index.html
 	@echo "</head>" >> index.html
 	@echo "<body>" >> index.html
 	sed "s|magnetsub|[Magnet Link]($(magnet))|g" README.md | \
