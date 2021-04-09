@@ -19,11 +19,15 @@ are also I2P labs projects.
  for anonymous blogging built on [github.com/kabukky/journey](https://github.com/kabukky/journey)
  and retaining most of it's features, while adding a few to make it suitable for
  use as a destkop-based I2P application.
+ * [eepHttpd static web server/bittorrent tracker](eephttpd/) eephttpd is a web
+ server which turns I2P sites into torrents, then volunteers to act as a tracker
+ for them. It's also capable of updating site content from a git remote.
  * [BRB IRC Client/Server/WebIRC Groupchat](brb) BRB is a combination of an IRC
  client, an IRC server, and a WebIRC service, all of which are automatically
  configured to connect and listen on I2P connections only. It can be used as
  a safe, easy to configure IRC client, or use it with the BRB IRC server for
- a selfhosted group chat.
+ a selfhosted group chat. Powered by [Dispatch](https://github.com/khlieng/dispatch),
+ [Eris](https://github.com/prologic/eris), and [sam-forwarder](https://github.com/eyedeekay/sam-forwarder.)
  * [Experimental I2P Jpackage Installers](i2p/) Jpackage is a tool for bundling
  Java software with all the runtime dependencies and a Java environment which are
  required to make them work. We may be able to use this to create easier-to-use
