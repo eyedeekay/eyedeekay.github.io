@@ -33,25 +33,25 @@ curl:
 upload: upload-release upload-torrent upload-zip
 
 upload-release:
-	gothub release -p -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n "`rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`".magnet -d "Site snapshot as of `date`"
+	#gothub release -p -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n "`rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`".magnet -d "Site snapshot as of `date`"
 
 upload-torrent:
-	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.torrent -f idk.i2p.torrent
+	#gothub upload -R -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.torrent -f idk.i2p.torrent
 
 upload-zip:
-	gothub -v upload -R -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.zip -f idk.i2p.zip
+	#gothub -v upload -R -u eyedeekay -r eyedeekay.github.io -t `rhash -g idk.i2p.torrent | sed 's|magnet:?xt=urn:btih:||g'`.magnet -n idk.i2p.zip -f idk.i2p.zip
 
 current: current-release current-torrent current-zip
 
 current-release:
-	gothub release -p -u eyedeekay -r eyedeekay.github.io -t "current" -n "current" -d "Site snapshot as of `date`"; true
-	gothub edit -p -u eyedeekay -r eyedeekay.github.io -t "current" -n "current" -d "Site snapshot as of `date`"; true
+	#gothub release -p -u eyedeekay -r eyedeekay.github.io -t "current" -n "current" -d "Site snapshot as of `date`"; true
+	#gothub edit -p -u eyedeekay -r eyedeekay.github.io -t "current" -n "current" -d "Site snapshot as of `date`"; true
 
 current-torrent:
-	gothub upload -R -u eyedeekay -r eyedeekay.github.io -t "current" -n idk.i2p.torrent -f idk.i2p.torrent
+	#gothub upload -R -u eyedeekay -r eyedeekay.github.io -t "current" -n idk.i2p.torrent -f idk.i2p.torrent
 
 current-zip:
-	gothub -v upload -R -u eyedeekay -r eyedeekay.github.io -t "current" -n idk.i2p.zip -f idk.i2p.zip
+	#gothub -v upload -R -u eyedeekay -r eyedeekay.github.io -t "current" -n idk.i2p.zip -f idk.i2p.zip
 
 up:
 	cp idk.i2p.torrent ~/.i2p/i2psnark/idk.i2p.torrent
