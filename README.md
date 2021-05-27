@@ -11,7 +11,7 @@ Besides working on [I2P](https://geti2p.net/), I have a bunch of side-projects
 centered around the use of I2P, especially in Go and Javascript. Some of these
 are also I2P labs projects.
 
-### I2P Webextensions and Browser Research
+### I2P Webextensions, Browser Research, Freestanding Applications, Tutorials
 
  * [I2P in Private Browsing Mode for Firefox](I2P-in-Private-Browsing-Mode-Firefox/)
  inspired by Brave, this browser extension enforces a few privacy rules for
