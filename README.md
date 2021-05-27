@@ -38,6 +38,8 @@ are also I2P labs projects.
  Java software with all the runtime dependencies and a Java environment which are
  required to make them work. We may be able to use this to create easier-to-use
  I2P installers.
+ * [Nextcloud over I2P Example](Nextcloud-over-I2P-on-Docker/) Instructions for
+ setting up your own hosted services over I2P using NextCloud.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.
