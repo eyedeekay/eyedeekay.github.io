@@ -27,7 +27,7 @@ are also I2P labs projects.
  configured to connect and listen on I2P connections only. It can be used as
  a safe, easy to configure IRC client, or use it with the BRB IRC server for
  a selfhosted group chat. Powered by [Dispatch](https://github.com/khlieng/dispatch),
- [Eris](https://github.com/prologic/eris), and [sam-forwarder](https://github.com/eyedeekay/sam-forwarder.)
+ [Eris](https://git.mills.io/prologic/eris), and [sam-forwarder](https://github.com/eyedeekay/sam-forwarder.)
  * [Experimental I2P Jpackage Installers](i2p/) Jpackage is a tool for bundling
  Java software with all the runtime dependencies and a Java environment which are
  required to make them work. We may be able to use this to create easier-to-use
