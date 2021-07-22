@@ -43,7 +43,7 @@ are also I2P labs projects.
 
  * [Nextcloud over I2P Example](Nextcloud-over-I2P-on-Docker/) Instructions for
  setting up your own hosted services over I2P using NextCloud.
- * [DokuWiku over I2P Example](DokuWiki-over-I2P/) Instructions for
+ * [DokuWiku over I2P Example](Dokuwiki-over-I2P/) Instructions for
  setting up your own wiki over I2P using DokuWiki.
  * [SSH over I2P Example](i2p-i2pd-sshsetup) Instructions for
  setting up your own remote access over I2P using SSH.
