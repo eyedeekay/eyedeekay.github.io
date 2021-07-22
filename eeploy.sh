@@ -20,8 +20,8 @@ FNGDOCREPO=https://github.com/eyedeekay/I2P-Browser-Attackability-Evaluation
 MIRDOCROOT="$CONFIGDOCROOT"eepsite/docroot/mirror/
 MIRDOCREPO=https://github.com/eyedeekay/mirror
 
-#BRBDOCROOT="$CONFIGDOCROOT"eepsite/docroot/brb/
-#BRBDOCREPO=https://github.com/eyedeekay/brb
+BRBDOCROOT="$CONFIGDOCROOT"eepsite/docroot/brb/
+BRBDOCREPO=https://github.com/eyedeekay/brb
 
 JPAKDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p/
 JPAKDOCREPO=https://github.com/eyedeekay/i2p
