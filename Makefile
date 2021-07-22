@@ -68,6 +68,7 @@ plug:
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> plugins.html
 	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> plugins.html
 	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`rhash -g idk.i2p.torrent`"\"/>" >> plugins.html
+	@echo "  <meta name=\"description\" content=\"Plugins collection\"/>" >> plugins.html
 	@echo "</head>" >> plugins.html
 	@echo "<body>" >> plugins.html
 	sed "s|magnetsub|[Magnet Link]($(magnet))|g" plugins.md | \
@@ -85,6 +86,7 @@ info:
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> infographics.html
 	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> infographics.html
 	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`rhash -g idk.i2p.torrent`"\"/>" >> infographics.html
+	@echo "  <meta name=\"description\" content=\"Infographics collection\"/>" >> infographics.html
 	@echo "</head>" >> infographics.html
 	@echo "<body>" >> infographics.html
 	sed "s|magnetsub|[Magnet Link]($(magnet))|g" infographics.md | \
@@ -102,6 +104,7 @@ vid:
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> video.html
 	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> video.html
 	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`rhash -g idk.i2p.torrent`"\"/>" >> video.html
+	@echo "  <meta name=\"description\" content=\"I2P Videos\"/>" >> video.html
 	@echo "</head>" >> video.html
 	@echo "<body>" >> video.html
 	sed "s|magnetsub|[Magnet Link]($(magnet))|g" videos.md | \
@@ -129,6 +132,7 @@ index: README info vid plug curl
 	@echo "  <link rel=\"stylesheet\" type=\"text/css\" href =\"style.css\" />" >> index.html
 	@echo "  <meta http-equiv=\"i2p-location\" content=\"http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p\"/>" >> index.html
 	@echo "  <meta http-equiv=\"i2p-torrentlocation\" content=\""`rhash -g idk.i2p.torrent`"\"/>" >> index.html
+	@echo "  <meta name=\"description\" content=\"idk's I2P software and information\"/>" >> index.html
 	@echo "</head>" >> index.html
 	@echo "<body>" >> index.html
 	sed "s|magnetsub|[Magnet Link]($(magnet))|g" README.md | \
