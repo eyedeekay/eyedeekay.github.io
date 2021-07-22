@@ -35,6 +35,15 @@ BRBDOCREPO=https://github.com/eyedeekay/brb
 RAILDOCROOT="$CONFIGDOCROOT"eepsite/docroot/railroad/
 RAILDOCREPO=https://github.com/eyedeekay/railroad
 
+DOKUDOCROOT="$CONFIGDOCROOT"eepsite/docroot/DokuWiki-over-I2P
+DOKUDOCREPO=https://github.com/eyedeekay/DokuWiki-over-I2P
+
+NEXTDOCROOT="$CONFIGDOCROOT"eepsite/docroot/Nextcloud-over-I2P-on-Docker
+NEXTDOCREPO=https://github.com/eyedeekay/Nextcloud-over-I2P-on-Docker
+
+SSHDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p-i2pd-sshsetup
+SSHDOCREPO=https://github.com/eyedeekay/i2p-i2pd-sshsetup
+
 function setuppage(){
     DOCROOT=$1
     DOCREPO=$2

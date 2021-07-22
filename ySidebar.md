@@ -5,7 +5,7 @@ Besides working on [I2P](https://geti2p.net/), I have a bunch of side-projects
 centered around the use of I2P, especially in Go and Javascript. Some of these
 are also I2P labs projects.
 
-### I2P Webextensions, Browser Research, Freestanding Applications, Tutorials
+### I2P Webextensions, Freestanding Applications
 
  * [I2P in Private Browsing Mode for Firefox](I2P-in-Private-Browsing-Mode-Firefox/)
  inspired by Brave, this browser extension enforces a few privacy rules for
@@ -32,8 +32,15 @@ are also I2P labs projects.
  Java software with all the runtime dependencies and a Java environment which are
  required to make them work. We may be able to use this to create easier-to-use
  I2P installers.
+
+### Tutorials, Research
+
  * [Nextcloud over I2P Example](Nextcloud-over-I2P-on-Docker/) Instructions for
  setting up your own hosted services over I2P using NextCloud.
+ * [DokuWiku over I2P Example](DokuWiki-over-I2P/) Instructions for
+ setting up your own wiki over I2P using DokuWiki.
+ * [SSH over I2P Example](i2p-i2pd-sshsetup) Instructions for
+ setting up your own remote access over I2P using SSH.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.
