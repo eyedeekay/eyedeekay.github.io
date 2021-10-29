@@ -55,6 +55,13 @@ encourage you to run your own gitlab instance using the instructions I wrote, av
 on the I2P project [I2P Site](http://i2p-projekt.i2p/en/docs/applications/gitlab) and
 on the [Web](https://geti2p.net/en/docs/applications/gitlab).
 
+### I2P Radio Station
+
+I'm also running an I2P radio station with mostly just stuff I know I can
+retransmit from archive.org and podcasts I like.
+
+ * [IDK's Radio Station](http://radio.idk.i2p/?i2paddresshelper=Cvr39DAydBr7gfjuDbT05aVly9VLtPKRCCA6nApP9lmySvRDHIx42BLkAz6RdEgK1xGAyj1iTsFjOb8aq0mUdMzWeZXAihzrI14EAA0EKxYchS8mxZ8by0nNoGv1dzFUKIsndKWHnXsnOLaReUNi4tC4ADP49CY-cYJYhzcRK1URu-IiabypT8CvTy6t9n3jw0uKqRmDISxSLdhRTU7d8n~t-mzgOnLKJxDe88EVrYpO17r4Xm1IWfa2ETG7ex5GBrhA6QZZPY2op9GkbzslXOmdlseuKSIZBUdhKY4XcrU-xvPc35T~kjVEWwLmHrt030eezd-sm~PTHimxh-8NnZavcaBtz8kJPWml6iaRk83Ay-GUstI8sRprtjIXi5BoJ~qw9X6SnNjrOstC7~DqXa8MkRTTtmHQm7tFGBLe3ZJV~jU4RxHloYj-1fsTytBBND3oA50~i0cct86l4Y3AjvcGiT8wQj4ETMOqnvKuhML8mpaiRJMLfzyk0WTXTbogBQAEAAcAAA==)
+
 ### What's Weird about this I2P Site?
 
 This I2P site uses an experimental feature of I2P in Private browsing called 
