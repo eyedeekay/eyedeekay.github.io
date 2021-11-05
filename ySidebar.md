@@ -64,11 +64,9 @@ retransmit from archive.org and podcasts I like.
 
 This shell script will automatically start VLC and connect it to my station.
 
-```sh
-#! /usr/bin/env sh
-set -euo
-http_proxy=http://127.0.0.1:4444 vlc http://radio.idk.i2p/mpd.m3u
-```
+		#! /usr/bin/env sh
+		set -euo
+		http_proxy=http://127.0.0.1:4444 vlc http://radio.idk.i2p/mpd.m3u
 
 ### What's Weird about this I2P Site?
 
