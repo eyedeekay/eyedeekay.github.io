@@ -6,6 +6,7 @@ else
     CONFIGDOCROOT=$HOME/.i2p/
 fi
 
+#Don't forget the trailing slash on all directories or the site will not update.
 IDKDOCROOT="$CONFIGDOCROOT"eepsite/docroot/
 IDKDOCREPO=https://github.com/eyedeekay/eyedeekay.github.io
 
@@ -35,16 +36,16 @@ BRBDOCREPO=https://github.com/eyedeekay/brb
 RAILDOCROOT="$CONFIGDOCROOT"eepsite/docroot/railroad/
 RAILDOCREPO=https://github.com/eyedeekay/railroad
 
-RESEEDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/reseed-tools
+RESEEDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/reseed-tools/
 RESEEDDOCREPO=https://github.com/eyedeekay/reseed-tools
 
-DOKUDOCROOT="$CONFIGDOCROOT"eepsite/docroot/Dokuwiki-over-I2P
+DOKUDOCROOT="$CONFIGDOCROOT"eepsite/docroot/Dokuwiki-over-I2P/
 DOKUDOCREPO=https://github.com/eyedeekay/Dokuwiki-over-I2P
 
-NEXTDOCROOT="$CONFIGDOCROOT"eepsite/docroot/Nextcloud-over-I2P-on-Docker
+NEXTDOCROOT="$CONFIGDOCROOT"eepsite/docroot/Nextcloud-over-I2P-on-Docker/
 NEXTDOCREPO=https://github.com/eyedeekay/Nextcloud-over-I2P-on-Docker
 
-SSHDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p-i2pd-sshsetup
+SSHDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p-i2pd-sshsetup/
 SSHDOCREPO=https://github.com/eyedeekay/i2p-i2pd-sshsetup
 
 function setuppage(){
@@ -61,6 +62,22 @@ function setuppage(){
     fi
 }
 
+function reseedpluginsetup(){
+    DOCROOT=$1
+    DOCREPO=$2
+    echo "Setting personal site from $DOCREPO in $DOCROOT"
+    if [ -d "$DOCROOT" ]; then
+        if [ -d "$DOCROOT.git" ]; then
+            cd "$DOCROOT" && pwd && git pull --ff-only --all
+            cd "$DOCROOT" && git submodule update --recursive --remote
+        fi
+    else
+        git clone "$DOCREPO" "$DOCROOT"
+    fi
+    cd "$DOCROOT"
+    make download-su3s
+}
+
 setuppage $IDKDOCROOT $IDKDOCREPO
 setuppage $FFXDOCROOT $FFXDOCREPO
 setuppage $FFXSTATROOT $FFXSTATREPO
@@ -74,4 +91,4 @@ setuppage $MIRDOCROOT $MIRDOCREPO
 setuppage $DOKUDOCROOT $DOKUDOCREPO
 setuppage $NEXTDOCROOT $NEXTDOCREPO
 setuppage $SSHDOCROOT $SSHDOCREPO
-setuppage $RESEEDDOCROOT $RESEEDDOCREPO
+reseedpluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
