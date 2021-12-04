@@ -28,7 +28,7 @@ are also I2P labs projects.
  * [eepHttpd static web server/bittorrent tracker](eephttpd/) eephttpd is a web
  server which turns I2P sites into torrents, then volunteers to act as a tracker
  for them. It's also capable of updating site content from a git remote.
- * [BRB IRC Client/Server/WebIRC Groupchat](brb) BRB is a combination of an IRC
+ * [BRB IRC Client/Server/WebIRC Groupchat](brb/) BRB is a combination of an IRC
  client, an IRC server, and a WebIRC service, all of which are automatically
  configured to connect and listen on I2P connections only. It can be used as
  a safe, easy to configure IRC client, or use it with the BRB IRC server for
