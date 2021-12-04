@@ -35,6 +35,9 @@ BRBDOCREPO=https://github.com/eyedeekay/brb
 RAILDOCROOT="$CONFIGDOCROOT"eepsite/docroot/railroad/
 RAILDOCREPO=https://github.com/eyedeekay/railroad
 
+RESEEDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/reseed-tools
+RESEEDDOCREPO=https://github.com/eyedeekay/reseed-tools
+
 DOKUDOCROOT="$CONFIGDOCROOT"eepsite/docroot/Dokuwiki-over-I2P
 DOKUDOCREPO=https://github.com/eyedeekay/Dokuwiki-over-I2P
 
@@ -71,3 +74,4 @@ setuppage $MIRDOCROOT $MIRDOCREPO
 setuppage $DOKUDOCROOT $DOKUDOCREPO
 setuppage $NEXTDOCROOT $NEXTDOCREPO
 setuppage $SSHDOCROOT $SSHDOCREPO
+setuppage $RESEEDDOCROOT $RESEEDDOCREPO
