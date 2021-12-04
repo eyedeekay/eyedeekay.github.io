@@ -32,6 +32,9 @@ are also I2P labs projects.
  Java software with all the runtime dependencies and a Java environment which are
  required to make them work. We may be able to use this to create easier-to-use
  I2P installers.
+ * [Reseed Tools](reseed-tools/) Reseed Tools is a freestanding, secure,
+ easy to configure I2P reseed server which is capable of transmitting a reseed by
+ the clearnet or Tor .onion services.
 
 ### Tutorials, Research
 
