@@ -48,6 +48,9 @@ NEXTDOCREPO=https://github.com/eyedeekay/Nextcloud-over-I2P-on-Docker
 SSHDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p-i2pd-sshsetup/
 SSHDOCREPO=https://github.com/eyedeekay/i2p-i2pd-sshsetup
 
+BLIZZARDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/blizzard/
+BLIZZARDDOCREPO=https://github.com/eyedeekay/blizzard
+
 function setuppage(){
     DOCROOT=$1
     DOCREPO=$2
@@ -62,7 +65,7 @@ function setuppage(){
     fi
 }
 
-function reseedpluginsetup(){
+function pluginsetup(){
     DOCROOT=$1
     DOCREPO=$2
     echo "Setting personal site from $DOCREPO in $DOCROOT"
@@ -91,4 +94,5 @@ setuppage $MIRDOCROOT $MIRDOCREPO
 setuppage $DOKUDOCROOT $DOKUDOCREPO
 setuppage $NEXTDOCROOT $NEXTDOCREPO
 setuppage $SSHDOCROOT $SSHDOCREPO
-reseedpluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
+pluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
+pluginsetup $BLIZZARDDOCROOT $BLIZZARDDOCREPO
