@@ -41,6 +41,9 @@ are also I2P labs projects.
  * [Reseed Tools](reseed-tools/) Reseed Tools is a freestanding, secure,
  easy to configure I2P reseed server which is capable of transmitting a reseed by
  the clearnet or Tor .onion services.
+ * [Blizzard Snowflake Donor](blizzard/) Blizzard runs a Snowflake proxy, donating
+ connectivity to Tor Browser users who use the WebRTC-based Snowflake pluggable
+ transport.
 
 ### Tutorials, Research
 
@@ -176,4 +179,4 @@ See, I told you I was pretty bad at blogging. Over 2 years. Lots of code though.
 
 Note to self: from now on, build the site with:
 
-`make all && make seed && git commit -am "Example commit message" && git push --all`
+`make all && make seed && git commit -am "`date`" && git push --all`

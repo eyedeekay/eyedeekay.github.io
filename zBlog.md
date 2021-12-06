@@ -26,4 +26,4 @@ See, I told you I was pretty bad at blogging. Over 2 years. Lots of code though.
 
 Note to self: from now on, build the site with:
 
-`make all && make seed && git commit -am "Example commit message" && git push --all`
+`make all && make seed && git commit -am "`date`" && git push --all`
