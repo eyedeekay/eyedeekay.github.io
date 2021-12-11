@@ -38,6 +38,9 @@ are also I2P labs projects.
  * [Blizzard Snowflake Donor](blizzard/) Blizzard runs a Snowflake proxy, donating
  connectivity to Tor Browser users who use the WebRTC-based Snowflake pluggable
  transport.
+* [Terrarium IRC Server](terrarium/) Terrarium is a lightweight, simple IRC
+ server which understands SAM and I2P Addresses. It can link with other terrarium
+ servers over I2P tunnels and create an I2P IRC network of your own.
 
 ### Tutorials, Research
 

@@ -33,6 +33,9 @@ EEPDOCREPO=https://github.com/eyedeekay/eephttpd
 BRBDOCROOT="$CONFIGDOCROOT"eepsite/docroot/brb/
 BRBDOCREPO=https://github.com/eyedeekay/brb
 
+IRCDOCROOT="$CONFIGDOCROOT"eepsite/docroot/terrarium/
+IRCDOCREPO=https://github.com/eyedeekay/terrarium
+
 RAILDOCROOT="$CONFIGDOCROOT"eepsite/docroot/railroad/
 RAILDOCREPO=https://github.com/eyedeekay/railroad
 
@@ -96,3 +99,4 @@ setuppage $NEXTDOCROOT $NEXTDOCREPO
 setuppage $SSHDOCROOT $SSHDOCREPO
 pluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
 pluginsetup $BLIZZARDDOCROOT $BLIZZARDDOCREPO
+pluginsetup $IRCDOCROOT $IRCDOCREPO
