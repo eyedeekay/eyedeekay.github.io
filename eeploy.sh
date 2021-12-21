@@ -24,6 +24,9 @@ MIRDOCREPO=https://github.com/eyedeekay/mirror
 BRBDOCROOT="$CONFIGDOCROOT"eepsite/docroot/brb/
 BRBDOCREPO=https://github.com/eyedeekay/brb
 
+MTGDOCROOT="$CONFIGDOCROOT"eepsite/docroot/mtg-i2p/
+MTGDOCREPO=https://github.com/eyedeekay/mtg-i2p
+
 JPAKDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p/
 JPAKDOCREPO=https://github.com/eyedeekay/i2p
 
@@ -86,6 +89,7 @@ function pluginsetup(){
 
 pluginsetup $RAILDOCROOT $RAILDOCREPO
 pluginsetup $BLIZZARDDOCROOT $BLIZZARDDOCREPO
+pluginsetup $MTGDOCROOT $MTGDOCREPO
 setuppage $IDKDOCROOT $IDKDOCREPO
 setuppage $FFXDOCROOT $FFXDOCREPO
 setuppage $FFXSTATROOT $FFXSTATREPO
