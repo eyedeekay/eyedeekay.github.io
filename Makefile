@@ -142,3 +142,5 @@ index: README info vid plug curl
 	@echo "</body>" >> index.html
 	@echo "</html>" >> index.html
 
+update:
+	make all && make seed && git commit -am "`date`" && git push --all

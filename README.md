@@ -47,6 +47,9 @@ are also I2P labs projects.
  * [Terrarium IRC Server](terrarium/) Terrarium is a lightweight, simple IRC
  server which understands SAM and I2P Addresses. It can link with other terrarium
  servers over I2P tunnels and create an I2P IRC network of your own.
+ * [MTG-I2P MTProto Outproxy](mtg-i2p/) mtg-i2p is a self-configuring MTProto
+ outproxy for I2P. It can act as a secure proxy server to the Telegram network.
+ It is based on [9seconds/mtg](https://github.com/9seconds/mtg).
 
 ### Tutorials, Research
 
