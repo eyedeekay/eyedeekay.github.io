@@ -57,6 +57,9 @@ SSHDOCREPO=https://github.com/eyedeekay/i2p-i2pd-sshsetup
 BLIZZARDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/blizzard/
 BLIZZARDDOCREPO=https://github.com/eyedeekay/blizzard
 
+WESNOTHDOCROOT="$CONFIGDOCROOT"eepsite/docroot/battle-for-wesnoth-i2p/
+WESNOTHDOCREPO=git@github.com:eyedeekay/battle-for-wesnoth-i2p
+
 function setuppage(){
     DOCROOT=$1
     DOCREPO=$2
@@ -90,6 +93,7 @@ function pluginsetup(){
 pluginsetup $RAILDOCROOT $RAILDOCREPO
 pluginsetup $BLIZZARDDOCROOT $BLIZZARDDOCREPO
 pluginsetup $MTGDOCROOT $MTGDOCREPO
+setuppage $WESNOTHDOCROOT $WESNOTHDOCREPO
 setuppage $IDKDOCROOT $IDKDOCREPO
 setuppage $FFXDOCROOT $FFXDOCREPO
 setuppage $FFXSTATROOT $FFXSTATREPO
