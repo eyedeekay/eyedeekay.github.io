@@ -58,7 +58,10 @@ BLIZZARDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/blizzard/
 BLIZZARDDOCREPO=https://github.com/eyedeekay/blizzard
 
 WESNOTHDOCROOT="$CONFIGDOCROOT"eepsite/docroot/battle-for-wesnoth-i2p/
-WESNOTHDOCREPO=git@github.com:eyedeekay/battle-for-wesnoth-i2p
+WESNOTHDOCREPO=https://github.com/eyedeekay/battle-for-wesnoth-i2p
+
+NETHACKDOCROOT="$CONFIGDOCROOT"eepsite/docroot/nethack-i2p/
+NETHACKDOCREPO=https://github.com/eyedeekay/nethack-i2p
 
 function setuppage(){
     DOCROOT=$1
