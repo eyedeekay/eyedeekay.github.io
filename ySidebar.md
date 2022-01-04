@@ -41,6 +41,9 @@ are also I2P labs projects.
  * [Terrarium IRC Server](terrarium/) Terrarium is a lightweight, simple IRC
  server which understands SAM and I2P Addresses. It can link with other terrarium
  servers over I2P tunnels and create an I2P IRC network of your own.
+ * [Thunderbird Configuration Helper Plugin](Thunderbird-I2P-Auto-Configuration)
+ This automatically configures Thunderbird to recognize `i2pmail.org` hostnames
+ so that Postman's mail server is easier to configure.
  * [DungeonQuest(Browserquest Clone](dungeonQuest/) DungeonQuest is a clone of
  Mozilla Browserquest which automatically runs over I2P using SAM. It's a casual
  game you can easily host and play over I2P.
