@@ -41,6 +41,7 @@ are also I2P labs projects.
  * [Terrarium IRC Server](terrarium/) Terrarium is a lightweight, simple IRC
  server which understands SAM and I2P Addresses. It can link with other terrarium
  servers over I2P tunnels and create an I2P IRC network of your own.
+ * [DungeonQuest(Browserquest Clone](dungeonQuest/)
  * [MTG-I2P MTProto Outproxy](mtg-i2p/) mtg-i2p is a self-configuring MTProto
  outproxy for I2P. It can act as a secure proxy server to the Telegram network.
  It is based on [9seconds/mtg](https://github.com/9seconds/mtg).
@@ -51,8 +52,12 @@ are also I2P labs projects.
  setting up your own hosted services over I2P using NextCloud.
  * [DokuWiku over I2P Example](Dokuwiki-over-I2P/) Instructions for
  setting up your own wiki over I2P using DokuWiki.
- * [SSH over I2P Example](i2p-i2pd-sshsetup) Instructions for
+ * [SSH over I2P Example](i2p-i2pd-sshsetup/) Instructions for
  setting up your own remote access over I2P using SSH.
+ * [Battle for Wesnoth I2P Multiplayer](battle-for-wesnoth-i2p/) Instructions for playing
+ Battle for Wesnoth using my server.
+ * [Nethack I2P Multiplayer](nethack-i2p/) Instructions for playing Nethack using 
+ my server.
  * [I2P Browser Fingerprint Gallery](I2P-Browser-Attackability-Evaluation/)
  This is an ongoing evaluation of the various ways there are to configure
  browsers for I2P and a developing rating system for them.

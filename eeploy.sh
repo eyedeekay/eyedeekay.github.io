@@ -66,6 +66,9 @@ NETHACKDOCREPO=https://github.com/eyedeekay/nethack-i2p
 THUNDERBIRDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/Thunderbird-I2P-Auto-Configuration/
 THUNDERBIRDDOCREPO=https://github.com/eyedeekay/Thunderbird-I2P-Auto-Configuration
 
+DUNGEONQUESTDOCROOT="$CONFIGDOCROOT"eepsite/docroot/dungeonQuest/
+DUNGEONQUESTDOCREPO=https://github.com/eyedeekay/dungeonQuest
+
 function setuppage(){
     DOCROOT=$1
     DOCREPO=$2
@@ -100,6 +103,7 @@ pluginsetup $RAILDOCROOT $RAILDOCREPO
 pluginsetup $BLIZZARDDOCROOT $BLIZZARDDOCREPO
 pluginsetup $MTGDOCROOT $MTGDOCREPO
 pluginsetup $THUNDERBIRDDOCROOT $THUNDERBIRDDOCREPO
+pluginsetup $DUNGEONQUESTDOCROOT $DUNGEONQUESTDOCREPO
 setuppage $NETHACKDOCROOT $NETHACKDOCREPO
 setuppage $WESNOTHDOCROOT $WESNOTHDOCREPO
 setuppage $IDKDOCROOT $IDKDOCREPO
