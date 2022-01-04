@@ -63,6 +63,9 @@ WESNOTHDOCREPO=https://github.com/eyedeekay/battle-for-wesnoth-i2p
 NETHACKDOCROOT="$CONFIGDOCROOT"eepsite/docroot/nethack-i2p/
 NETHACKDOCREPO=https://github.com/eyedeekay/nethack-i2p
 
+THUNDERBIRDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/Thunderbird-I2P-Auto-Configuration/
+THUNDERBIRDDOCREPO=https://github.com/eyedeekay/Thunderbird-I2P-Auto-Configuration
+
 function setuppage(){
     DOCROOT=$1
     DOCREPO=$2
@@ -96,6 +99,8 @@ function pluginsetup(){
 pluginsetup $RAILDOCROOT $RAILDOCREPO
 pluginsetup $BLIZZARDDOCROOT $BLIZZARDDOCREPO
 pluginsetup $MTGDOCROOT $MTGDOCREPO
+pluginsetup $THUNDERBIRDDOCROOT $THUNDERBIRDDOCREPO
+setuppage $NETHACKDOCROOT $NETHACKDOCREPO
 setuppage $WESNOTHDOCROOT $WESNOTHDOCREPO
 setuppage $IDKDOCROOT $IDKDOCREPO
 setuppage $FFXDOCROOT $FFXDOCREPO
