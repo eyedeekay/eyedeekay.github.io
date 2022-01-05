@@ -21,6 +21,9 @@ FNGDOCREPO=https://github.com/eyedeekay/I2P-Browser-Attackability-Evaluation
 MIRDOCROOT="$CONFIGDOCROOT"eepsite/docroot/mirror/
 MIRDOCREPO=https://github.com/eyedeekay/mirror
 
+JAVADOCROOT="$CONFIGDOCROOT"eepsite/docroot/javadoc-i2p/
+JAVADOCREPO=https://github.com/eyedeekay/javadoc-i2p
+
 BRBDOCROOT="$CONFIGDOCROOT"eepsite/docroot/brb/
 BRBDOCREPO=https://github.com/eyedeekay/brb
 
@@ -118,5 +121,6 @@ setuppage $MIRDOCROOT $MIRDOCREPO
 setuppage $DOKUDOCROOT $DOKUDOCREPO
 setuppage $NEXTDOCROOT $NEXTDOCREPO
 setuppage $SSHDOCROOT $SSHDOCREPO
+setuppage $JAVADOCROOT $JAVADOCREPO
 pluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
 pluginsetup $IRCDOCROOT $IRCDOCREPO
