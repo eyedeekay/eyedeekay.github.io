@@ -59,6 +59,9 @@ are also I2P labs projects.
 
 ### Tutorials, Research
 
+ * [I2P Javadoc](javadoc-i2p) Mirror of the I2P Java documentation. Clone it into
+ ~/.i2p/eepsite/docroot/javadoc-i2p/ to set up your own mirror automatically.
+ `git clone https://github.com/eyedeekay/javadoc-i2p ~/.i2p/eepsite/docroot/javadoc-i2p/`
  * [Nextcloud over I2P Example](Nextcloud-over-I2P-on-Docker/) Instructions for
  setting up your own hosted services over I2P using NextCloud.
  * [DokuWiku over I2P Example](Dokuwiki-over-I2P/) Instructions for
