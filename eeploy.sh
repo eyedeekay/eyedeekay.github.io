@@ -72,6 +72,9 @@ THUNDERBIRDDOCREPO=https://github.com/eyedeekay/Thunderbird-I2P-Auto-Configurati
 DUNGEONQUESTDOCROOT="$CONFIGDOCROOT"eepsite/docroot/dungeonQuest/
 DUNGEONQUESTDOCREPO=https://github.com/eyedeekay/dungeonQuest
 
+FDROIDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/fdroid/
+FDROIDDOCREPO=https://github.com/eyedeekay/fdroid
+
 function setuppage(){
     DOCROOT=$1
     DOCREPO=$2
@@ -122,5 +125,6 @@ setuppage $DOKUDOCROOT $DOKUDOCREPO
 setuppage $NEXTDOCROOT $NEXTDOCREPO
 setuppage $SSHDOCROOT $SSHDOCREPO
 setuppage $JAVADOCROOT $JAVADOCREPO
+setuppage $FDROIDDOCROOT $FDROIDDOCREPO
 pluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
 pluginsetup $IRCDOCROOT $IRCDOCREPO
