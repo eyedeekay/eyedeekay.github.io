@@ -75,6 +75,9 @@ DUNGEONQUESTDOCREPO=https://github.com/eyedeekay/dungeonQuest
 FDROIDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/fdroid/
 FDROIDDOCREPO=https://github.com/eyedeekay/fdroid
 
+FDROIDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/fdroid-dev/
+FDROIDDOCREPO=https://github.com/eyedeekay/fdroid-dev
+
 function setuppage(){
     DOCROOT=$1
     DOCREPO=$2
@@ -126,5 +129,6 @@ setuppage $NEXTDOCROOT $NEXTDOCREPO
 setuppage $SSHDOCROOT $SSHDOCREPO
 setuppage $JAVADOCROOT $JAVADOCREPO
 setuppage $FDROIDDOCROOT $FDROIDDOCREPO
+setuppage $FDROIDDEVDOCROOT $FDROIDDEVDOCREPO
 pluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
 pluginsetup $IRCDOCROOT $IRCDOCREPO
