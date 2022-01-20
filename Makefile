@@ -8,14 +8,30 @@ clean:
 	rm -rf idk.i2p .torrent idk.i2p.torrent ~/.i2p/i2psnark/idk.i2p ~/.i2p/i2psnark/idk.i2p.torrent tmp
 	mkdir -p idk.i2p
 
+DATE=`date +%Y%m%d`
+
 torrent:
-	cp -v *.* idk.i2p; true; cp -rv images idk.i2p/images; cp -rv video idk.i2p/video; cp -rv plugins idk.i2p/plugins && rm -f idk.i2p/idk.i2p.torrent idk.i2p/idk.i2p.zip
+	#cp -v *.* idk.i2p; true; \
+		#cp -rv images idk.i2p/images; \
+		#cp -rv video idk.i2p/video; \
+		#cp -rv plugins idk.i2p/plugins && \
+		#rm -f idk.i2p/idk.i2p.torrent idk.i2p/idk.i2p.zip
+	rm -rf idk.i2p
+	#cp -r . ../idk.i2p.tmp
+	rsync --cvs-exclude -rav . ../idk.i2p.tmp
+	find ../idk.i2p -type d -name '.git' -exec rm -rf {} \; ; true
+	find ../idk.i2p -type d -name '*.crl' -exec rm -rf {} \; ; true
+	find ../idk.i2p -type d -name '*.crt' -exec rm -rf {} \; ; true
+	find ../idk.i2p -type d -name '*.pem' -exec rm -rf {} \; ; true
+	find ../idk.i2p -type d -exec rm -rf {}/.??* \; ; true 
+	mv ../idk.i2p.tmp idk.i2p
 	mktorrent -a 'http://w7tpbzncbcocrqtwwm3nezhnnsw4ozadvi2hmvzdhrqzfxfum7wa.b32.i2p/a' \
 		-a 'http://uajd4nctepxpac4c4bdyrdw7qvja2a5u3x25otfhkptcjgd53ioq.b32.i2p/announce' \
 		-a 'http://s5ikrdyjwbcgxmqetxb3nyheizftms7euacuub2hic7defkh3xhq.b32.i2p/a' \
 		-a 'http://432m3mpxomy2bqccjmjru7gfeicockx7un5eni5i5uqxgakcvq6a.b32.i2p/a' \
 		-a 'http://niat6zw3p5wl473256bottv3kaybodhum2omlt3bl42oiirwf5xa.b32.i2p/a' \
-		-n 'idk.i2p' -w 'http://idk.i2p' -w 'http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p' -o idk.i2p.torrent idk.i2p
+		-n 'idk.i2p' -w 'http://idk.i2p' -w 'http://b2o47zwxqjbn7jj37yqkmvbmci7kqubwgxu3umqid7cexmc7xudq.b32.i2p' -o idk.i2p_$(DATE).torrent idk.i2p
+	cp idk.i2p_$(DATE).torrent idk.i2p.torrent
 	rm -rf ~/.i2p/i2psnark/idk.i2p ~/.i2p/i2psnark/idk.i2p.torrent
 
 seed: index curl upload

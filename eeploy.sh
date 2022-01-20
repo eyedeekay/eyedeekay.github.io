@@ -72,6 +72,9 @@ THUNDERBIRDDOCREPO=https://github.com/eyedeekay/Thunderbird-I2P-Auto-Configurati
 DUNGEONQUESTDOCROOT="$CONFIGDOCROOT"eepsite/docroot/dungeonQuest/
 DUNGEONQUESTDOCREPO=https://github.com/eyedeekay/dungeonQuest
 
+DEBDOCROOT="$CONFIGDOCROOT"eepsite/docroot/apt/
+DEBDOCREPO=https://github.com/eyedeekay/apt
+
 FDROIDDOCROOT="$CONFIGDOCROOT"eepsite/docroot/fdroid/
 FDROIDDOCREPO=https://github.com/eyedeekay/fdroid
 
@@ -123,12 +126,13 @@ setuppage $FNGDOCROOT $FNGDOCREPO
 setuppage $JPAKDOCROOT $JPAKDOCREPO
 setuppage $EEPDOCROOT $EEPDOCREPO
 setuppage $BRBDOCROOT $BRBDOCREPO
-setuppage $MIRDOCROOT $MIRDOCREPO
+pluginsetup $MIRDOCROOT $MIRDOCREPO
 setuppage $DOKUDOCROOT $DOKUDOCREPO
 setuppage $NEXTDOCROOT $NEXTDOCREPO
 setuppage $SSHDOCROOT $SSHDOCREPO
 setuppage $JAVADOCROOT $JAVADOCREPO
 setuppage $FDROIDDOCROOT $FDROIDDOCREPO
+setuppage $DEBDOCROOT $DEBDOCREPO
 setuppage $FDROIDDEVDOCROOT $FDROIDDEVDOCREPO
 pluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
 pluginsetup $IRCDOCROOT $IRCDOCREPO
