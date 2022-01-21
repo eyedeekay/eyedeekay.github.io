@@ -16,7 +16,7 @@ torrent:
 		#cp -rv video idk.i2p/video; \
 		#cp -rv plugins idk.i2p/plugins && \
 		#rm -f idk.i2p/idk.i2p.torrent idk.i2p/idk.i2p.zip
-	rm -rf idk.i2p
+	rm -rf idk.i2p idk.i2p_$(DATE).torrent
 	#cp -r . ../idk.i2p.tmp
 	rsync --cvs-exclude -rav . ../idk.i2p.tmp
 	find ../idk.i2p -type d -name '.git' -exec rm -rf {} \; ; true
