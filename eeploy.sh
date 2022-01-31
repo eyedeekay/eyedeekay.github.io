@@ -81,6 +81,9 @@ FDROIDDOCREPO=https://github.com/eyedeekay/fdroid
 FDROIDDEVDOCROOT="$CONFIGDOCROOT"eepsite/docroot/fdroid-dev/
 FDROIDDEVDOCREPO=https://github.com/eyedeekay/fdroid-dev
 
+TORMANAGERDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p.plugins.tor-manager/
+TORMANAGERDOCREPO=https://github.com/eyedeekay/i2p.plugins.tor-manager
+
 function setuppage(){
     DOCROOT=$1
     DOCREPO=$2
@@ -135,4 +138,5 @@ setuppage $FDROIDDOCROOT $FDROIDDOCREPO
 setuppage $DEBDOCROOT $DEBDOCREPO
 setuppage $FDROIDDEVDOCROOT $FDROIDDEVDOCREPO
 pluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
+pluginsetup $TORMANAGERDOCROOT $TORMANAGERDOCREPO
 pluginsetup $IRCDOCROOT $IRCDOCREPO
