@@ -99,6 +99,15 @@ This shell script will automatically start VLC and connect it to my station.
 		set -euo
 		http_proxy=http://127.0.0.1:4444 vlc http://radio.idk.i2p/mpd.m3u
 
+### I2P MMORPG
+
+I also run a BrowserQuest instance over I2P, which is a fantasy-themed
+browser-based MMORPG originally developed by Mozilla. It's available as a
+plugin in the "DungeonQuest" section above, so it's easy to **host your own**
+**MMORPG over I2P!** 
+
+- [**Dungeon Quest**](https://h53tzppm77qya2cugxsyl7pbct7kfeo344kbpscqod6iq4xiwtiq.b32.i2p:8000/game/client/index.html)
+
 ### What's Weird about this I2P Site?
 
 This I2P site uses an experimental feature of I2P in Private browsing called 
