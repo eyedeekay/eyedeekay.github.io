@@ -63,6 +63,8 @@ TORMANAGERDOCROOT="$CONFIGDOCROOT"eepsite/docroot/i2p.plugins.tor-manager/
 TORMANAGERDOCREPO=https://github.com/eyedeekay/i2p.plugins.tor-manager
 TORMIRRRORDOCROOT="$CONFIGDOCROOT"eepsite/docroot/torbrowser/
 TORMIRRORDOCREPO=https://github.com/eyedeekay/torbrowser
+I2PMIRRORDOCROOT="$CONFIGDOCROOT"eepsite/docroot/files/
+I2PMIRRORDOCREPO=https://github.com/eyedeekay/files
 
 
 function setuppage(){
@@ -113,6 +115,7 @@ setuppage $FDROIDDOCROOT $FDROIDDOCREPO
 setuppage $DEBDOCROOT $DEBDOCREPO
 setuppage $FDROIDDEVDOCROOT $FDROIDDEVDOCREPO
 setuppage $TORMIRRRORDOCROOT $TORMIRRORDOCREPO
+setuppage $I2PMIRRORDOCROOT $I2PMIRRORDOCREPO
 
 pluginsetup $RAILDOCROOT $RAILDOCREPO
 pluginsetup $BLIZZARDDOCROOT $BLIZZARDDOCREPO
@@ -122,4 +125,3 @@ pluginsetup $DUNGEONQUESTDOCROOT $DUNGEONQUESTDOCREPO
 pluginsetup $RESEEDDOCROOT $RESEEDDOCREPO
 pluginsetup $TORMANAGERDOCROOT $TORMANAGERDOCREPO
 pluginsetup $IRCDOCROOT $IRCDOCREPO
-#pluginsetup $MIRDOCROOT $MIRDOCREPO
