@@ -97,6 +97,8 @@ function pluginsetup(){
     make download-su3s
 }
 
+find $IDKDOCROOT -maxdepth 1 -exec bash -c "cd {} && git pull --all"
+
 setuppage $NETHACKDOCROOT $NETHACKDOCREPO
 setuppage $WESNOTHDOCROOT $WESNOTHDOCREPO
 setuppage $IDKDOCROOT $IDKDOCREPO
