@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/eyedeekay
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://eyedeekay.github.io
+  * I am eyedeekay (https://keybase.io/eyedeekay) on keybase.
+  * I have a public key with fingerprint 70D2 0607 38BE F805 23AC  AFF7 D75C 03B3 9B5E 14E1
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120851d1083d75d6d4e1f47362449eb9c01693d810770651423623074044132b8a40a",
+      "fingerprint": "70d2060738bef80523acaff7d75c03b39b5e14e1",
+      "host": "keybase.io",
+      "key_id": "d75c03b39b5e14e1",
+      "kid": "0101d262edc88b631ba56f39b28b7d706cc88e2b955091e595f17c848711945e0bdc0a",
+      "uid": "e3094bf4563a66c141d2cd420ae04919",
+      "username": "eyedeekay"
+    },
+    "service": {
+      "hostname": "eyedeekay.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1683166135,
+  "expire_in": 157680000,
+  "prev": "b091b2bce23716692e22fcf8b922e5886d32441a40318bcaf26aa4fb574a154d",
+  "seqno": 36,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtUm1InVUcv3d6dTOCSfZC6bKjwdbEzvtznhs0xbk1Bs3hHFG2y3Oecx59cN17
+u/dRdxmKUYEiyEKIjW0QbokM6dJk+7A3thqxFGe4zUFJZAQtsA/Ri2uZdR7LL9H5
+cjj/8/v9/r//y5GHCyIl0butBRPHD5QtRKd+kBHV/MjMYSBTKgfih0GHXr30QaWz
+QaLDVyAOIMJQMKQQFERZTHFFNfKoRTim1NbSdiHiNlECQcuCnCGKzReBFoWUIoKl
+cCh0QA3w/GSbzqQzfjIwshZUGHJoESG1JyDDxHEdz7NMChcSSWzJNDKZDLE9lQ0Z
+xpx0srrWT5mYeSRW7f0Pfs03RApzrJUrhOQESYdxz+CwkCYL5K6JayxtxqCNNLOZ
+hyxXUGEhZFOmoVTuqu/OVTlNoE2lRxknDucuokbcVRRDR0NqIzsEZnUm6byhQ3RO
+K607nBzoqQEm3OW7OuxsWMp/IbVtftDeKf+pK51JBSk3ddAA2oMgnY2HAkEuHTK6
+tUz8q5WQflKZfhpGl85k/VQSxJFBuoEfiiMuCOIcEVYD9KG0n9EJP0QwiwtoTphH
+d4G4A6SpXWLpakwsw7CxxthzPSFtjDUTgitixozMCAkS0kwIc8ehnmQWdRCjCoTl
+vZlMgTjhxqjTZnxm/bakE3RmNOgpGYiSwki0JFLx2DOF6dmiYnHlfqxqPL+0toSx
+deEGRko2bFyLNNcX/xE7NJTdUv5h67HSlcXnv5nfni9FLZ033OeGzsDE3Xr4+K2r
+H335WW7k/JGfd37356unjn41NPvXhr76vp0zlS/2vjBYHiv/ZL6x7NnFExV8+OLy
+/KZfMkt3Ni9sdR/dMfHkfmmXnvX6CkYnryy3762c+nH66SnVja/fW5z74ubYrrru
+j39rfOd+4ie4+eWT1Fsqfv3Bya7z0ab3g6rChidUbKyg6IP87nOnWx4M3CjeN7Vt
+bmxvc/X0wLvylUv2hU+391c13L781Fx3+WTd+td6T+S3Vke3DX+7Ozk4gvPXHurf
+Bxavf31v9Pu3fl0p7K/c1LSw5yU0sct7O8qmo8utn//eMB7Dx94TfwM=
+=65cr
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/eyedeekay
+
+==================================================================
