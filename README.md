@@ -23,7 +23,7 @@ are also I2P labs projects.
  use I2P with the maximum privacy available from Chromium.
  * [Railroad Anonymous Blogging Platform](railroad/) Railroad is a simple tool
  for anonymous blogging built on [github.com/kabukky/journey](https://github.com/kabukky/journey)
- and retaining most of it's features, while adding a few to make it suitable for
+ and retaining most of its features, while adding a few to make it suitable for
  use as a destkop-based I2P application.
  * [eepHttpd static web server/bittorrent tracker](eephttpd/) eephttpd is a web
  server which turns I2P sites into torrents, then volunteers to act as a tracker
