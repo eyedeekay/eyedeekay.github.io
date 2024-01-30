@@ -1,5 +1,9 @@
 #! /usr/bin/env bash
 
+if [ -f "$HOME/github-token" ]; then
+    . "$HOME/github-token"
+fi
+
 if [ `whoami` = i2psvc ]; then
     CONFIGDOCROOT="/var/lib/i2p/i2p-config/"
 else
